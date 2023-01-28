@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="hello.demo.repository.MemoryMemberRepositoryTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-01-28T15:07:24" hostname="wooui-MacBookAir.local" time="0.034">
+  <properties/>
+  <testcase name="findAll()" classname="hello.demo.repository.MemoryMemberRepositoryTest" time="0.032"/>
+  <testcase name="findByName()" classname="hello.demo.repository.MemoryMemberRepositoryTest" time="0.001"/>
+  <testcase name="save()" classname="hello.demo.repository.MemoryMemberRepositoryTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
