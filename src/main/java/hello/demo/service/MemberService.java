@@ -2,14 +2,14 @@ package hello.demo.service;
 
 import hello.demo.domain.Member;
 import hello.demo.repository.MemberRepository;
-import hello.demo.repository.MemoryMemberRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
+import org.springframework.transaction.annotation.Transactional;
+@Transactional
 @Service
-public class MemberService {
+public class    MemberService {
     private final MemberRepository memberRepository ;
     @Autowired
     public MemberService(MemberRepository memberRepository){
