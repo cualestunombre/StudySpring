@@ -11,8 +11,12 @@ import javax.persistence.EntityManager;
 import javax.sql.DataSource;
 @Configuration
 public class SpringConfig {
-    private final EntityManager em;
+
+    private final EntityManager em ;
     @Autowired
+    public SpringConfig(EntityManager em){
+        this.em=em;
+    }
     @Bean
     public MemberRepository memberRepository(){
         // return new MemberRepository(dataSource);
