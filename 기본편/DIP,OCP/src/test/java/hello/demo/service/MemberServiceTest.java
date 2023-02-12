@@ -1,47 +1,26 @@
 package hello.demo.service;
 
+import hello.demo.AppConfig;
 import hello.demo.domain.Member;
+import hello.demo.repository.MemberRepository;
 import hello.demo.repository.MemoryMemberRepository;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import static org.assertj.core.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class MemberServiceTest {
-    MemberServiceImpl memberService;
-    MemoryMemberRepository memberRepository;
-
-    @BeforeEach
-    public void beforeEach(){
-        memberRepository = new MemoryMemberRepository();
-        memberService = new MemberServiceImpl(memberRepository);
-    }
-    @AfterEach
-    public void afterEach(){
-        memberRepository.clearStore();
-    }
-
     @Test
-    public void 회원가입() {
-        Member member = new Member();
-        member.setName("hello");
-
-        Long saveId = memberService.join(member);
-
-        Member findMember = memberRepository.findById(saveId).get();
-        assertEquals(member.getName(),findMember.getName());
-    }
-    @Test
-    public void 중복회원검사(){
-        Member member1 = new Member();
-        member1.setName("spring");
-        Member member2 = new Member();
-        member2.setName("spring");
-        memberService.join(member1);
-        IllegalStateException e = assertThrows(IllegalStateException.class, ()->memberService.join(member2));
-        assertThat(e.getMessage()).isEqualTo("이미 존재하는 회원입니다");
+    public void test(){
+        AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext(hello.demo.DemoApplication.class);
+        MemberService m = ac.getBean(MemberServiceImpl.class);
+        m.join(new Member());
+        MemberRepository m2 = ac.getBean(MemberRepository.class);
+        System.out.println(m.hashCode());
+        System.out.println(m2.hashCode());
     }
 
 

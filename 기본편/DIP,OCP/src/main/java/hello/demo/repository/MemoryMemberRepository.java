@@ -1,10 +1,12 @@
 package hello.demo.repository;
 import hello.demo.domain.Member;
+import org.springframework.beans.factory.InitializingBean;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 
 import java.util.*;
-
-public class MemoryMemberRepository implements MemberRepository {
+@Component
+public class MemoryMemberRepository implements MemberRepository, InitializingBean {
     private static Map<Long,Member> store = new HashMap<>();
     private static long sequence = 0L;
 
@@ -25,8 +27,12 @@ public class MemoryMemberRepository implements MemberRepository {
         return new ArrayList<>(store.values());
     }
 
-
     public void clearStore(){
         store.clear();
+    }
+
+    @Override
+    public void afterPropertiesSet(){
+        System.out.println("Sssssstart!!!");
     }
 }
