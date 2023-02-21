@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="75dcfc05-fdff-4d47-8c31-48a8463cf057" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../기본편/DIP,OCP/src/main/java/hello/demo/domain/Language.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../기본편/DIP,OCP/src/main/java/hello/demo/service/Java.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../기본편/DIP,OCP/src/main/java/hello/demo/service/LanguageSelection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../기본편/DIP,OCP/src/main/java/hello/demo/service/MemberSelection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../기본편/DIP,OCP/src/main/java/hello/demo/service/MemberSelectionImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../기본편/DIP,OCP/src/main/java/hello/demo/service/Python.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../기본편/DIP,OCP/src/test/java/hello/demo/service/ClientBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../기본편/DIP,OCP/src/test/java/hello/demo/service/justTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../기본편/DIP,OCP/.gradle/7.6/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../기본편/DIP,OCP/.gradle/7.6/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../기본편/DIP,OCP/.gradle/7.6/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../기본편/DIP,OCP/.gradle/7.6/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../기본편/DIP,OCP/.gradle/7.6/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../기본편/DIP,OCP/.gradle/7.6/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../기본편/DIP,OCP/.gradle/7.6/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../기본편/DIP,OCP/.gradle/7.6/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../기본편/DIP,OCP/.gradle/7.6/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../기본편/DIP,OCP/.gradle/7.6/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../기본편/DIP,OCP/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../기본편/DIP,OCP/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../기본편/DIP,OCP/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/../기본편/DIP,OCP/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../기본편/DIP,OCP/build/classes/java/main/hello/demo/AppConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../기본편/DIP,OCP/build/classes/java/main/hello/demo/domain/Member.class" beforeDir="false" afterPath="$PROJECT_DIR$/../기본편/DIP,OCP/build/classes/java/main/hello/demo/domain/Member.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../기본편/DIP,OCP/build/classes/java/main/hello/demo/repository/MemberRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../기본편/DIP,OCP/build/classes/java/main/hello/demo/repository/MemberRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../기본편/DIP,OCP/build/classes/java/main/hello/demo/repository/MemoryMemberRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../기본편/DIP,OCP/build/classes/java/main/hello/demo/repository/MemoryMemberRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../기본편/DIP,OCP/build/classes/java/main/hello/demo/service/DiscountPolicy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../기본편/DIP,OCP/build/classes/java/main/hello/demo/service/DiscountPolicyImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../기본편/DIP,OCP/build/classes/java/main/hello/demo/service/MemberService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../기본편/DIP,OCP/build/classes/java/main/hello/demo/service/MemberService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../기본편/DIP,OCP/build/classes/java/main/hello/demo/service/MemberServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../기본편/DIP,OCP/build/classes/java/main/hello/demo/service/MemberServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../기본편/DIP,OCP/build/classes/java/main/hello/demo/service/OrderService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../기본편/DIP,OCP/build/classes/java/main/hello/demo/service/OrderServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../기본편/DIP,OCP/build/classes/java/test/hello/demo/service/MemberServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../기본편/DIP,OCP/build/classes/java/test/hello/demo/service/MemberServiceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../기본편/DIP,OCP/build/reports/tests/test/classes/hello.demo.service.MemberServiceTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../기본편/DIP,OCP/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../기본편/DIP,OCP/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../기본편/DIP,OCP/build/reports/tests/test/packages/hello.demo.service.html" beforeDir="false" afterPath="$PROJECT_DIR$/../기본편/DIP,OCP/build/reports/tests/test/packages/hello.demo.service.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../기본편/DIP,OCP/build/test-results/test/TEST-hello.demo.service.MemberServiceTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../기본편/DIP,OCP/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../기본편/DIP,OCP/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../기본편/DIP,OCP/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/../기본편/DIP,OCP/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../기본편/DIP,OCP/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../기본편/DIP,OCP/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../기본편/DIP,OCP/build/tmp/compileJava/compileTransaction/stash-dir/AppConfig.class.uniqueId0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../기본편/DIP,OCP/build/tmp/compileJava/compileTransaction/stash-dir/MemoryMemberRepository.class.uniqueId1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../기본편/DIP,OCP/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../기본편/DIP,OCP/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../기본편/DIP,OCP/build/tmp/compileTestJava/compileTransaction/stash-dir/MemberServiceTest.class.uniqueId0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../기본편/DIP,OCP/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../기본편/DIP,OCP/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../기본편/DIP,OCP/src/main/java/hello/demo/AppConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../기본편/DIP,OCP/src/main/java/hello/demo/domain/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/../기본편/DIP,OCP/src/main/java/hello/demo/domain/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../기본편/DIP,OCP/src/main/java/hello/demo/repository/MemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../기본편/DIP,OCP/src/main/java/hello/demo/repository/MemberRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../기본편/DIP,OCP/src/main/java/hello/demo/repository/MemoryMemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../기본편/DIP,OCP/src/main/java/hello/demo/repository/MemoryMemberRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../기본편/DIP,OCP/src/main/java/hello/demo/service/DiscountPolicy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../기본편/DIP,OCP/src/main/java/hello/demo/service/DiscountPolicyImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../기본편/DIP,OCP/src/main/java/hello/demo/service/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../기본편/DIP,OCP/src/main/java/hello/demo/service/MemberService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../기본편/DIP,OCP/src/main/java/hello/demo/service/MemberServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../기본편/DIP,OCP/src/main/java/hello/demo/service/MemberServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../기본편/DIP,OCP/src/main/java/hello/demo/service/OrderService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../기본편/DIP,OCP/src/main/java/hello/demo/service/OrderServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../기본편/DIP,OCP/src/test/java/hello/demo/service/MemberServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../기본편/DIP,OCP/src/test/java/hello/demo/service/MemberServiceTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2LuLT5IGcBRPjh70cI12wKea74V" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/woo/Desktop/code/StudySpring/MVC",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="demo.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="hello.demo.DemoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="75dcfc05-fdff-4d47-8c31-48a8463cf057" name="Changes" comment="" />
+      <created>1676716026146</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1676716026146</updated>
+      <workItem from="1676716027806" duration="101000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

@@ -1,27 +1,21 @@
 package hello.demo.service;
-
-import hello.demo.AppConfig;
-import hello.demo.domain.Member;
-import hello.demo.repository.MemberRepository;
-import hello.demo.repository.MemoryMemberRepository;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import static org.assertj.core.api.Assertions.*;
-import static org.junit.jupiter.api.Assertions.*;
-
 public class MemberServiceTest {
     @Test
-    public void test(){
+    public void justTest(){
         AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext(hello.demo.DemoApplication.class);
-        MemberService m = ac.getBean(MemberServiceImpl.class);
-        m.join(new Member());
-        MemberRepository m2 = ac.getBean(MemberRepository.class);
-        System.out.println(m.hashCode());
-        System.out.println(m2.hashCode());
+        ClientBean cb1 = ac.getBean(ClientBean.class);
+        cb1.check();
+        ClientBean cb2 = ac.getBean(ClientBean.class);
+        cb2.check();
+        if(cb1==cb2){
+            System.out.println("ok");
+        }
+
+
     }
 
-
 }
+
