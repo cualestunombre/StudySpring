@@ -1,28 +1,18 @@
 package hello.demo.domain;
+import lombok.Setter;
+import lombok.Getter;
 
+@Getter
+@Setter
 public class Member {
-    private int id;
-    private Language language;
-    public Member(int id){
-        this.id = id;
+   private Long id;
+   private String name;
+   private int age;
+   public Member(){}
+    public Member(String name, int age){
+       this.name=name;
+       this.age=age;
     }
 
-    public int getId() {
-        return id;
-    }
 
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getLanguage() {
-        if(this.language==Language.java) return "java";
-        if(this.language==Language.python) return "python";
-        return "none";
-
-    }
-
-    public void setLanguage(Language language) {
-        this.language = language;
-    }
 }
