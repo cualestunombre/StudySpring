@@ -10,6 +10,7 @@ public class ModelView {
     public ModelView(String viewName){
         this.viewName=viewName;
     }
+    public ModelView(){}
     public String getViewName(){
         return this.viewName;
     }
@@ -20,5 +21,5 @@ public class ModelView {
 
     public void setModel(Map<String,Object> model){this.model=model;}
 
-    
+
 }
