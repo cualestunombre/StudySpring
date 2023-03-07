@@ -5,10 +5,52 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75dcfc05-fdff-4d47-8c31-48a8463cf057" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/hello/demo/controller/LogTestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hello/demo/controller/RequestBodyStringController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hello/demo/controller/RequestBodyJsonController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hello/demo/controller/ResponseViewController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hello/demo/domain/HelloData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hello/demo/domain/JsList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/response/hello.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../기본편/DIP,OCP/src/main/java/hello/demo/Appconfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../기본편/DIP,OCP/src/main/java/hello/demo/domain/Hi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../기본편/DIP,OCP/src/main/java/hello/demo/domain/Hiinter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.6/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.6/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.6/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.6/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.6/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hello/demo/controller/RequestBodyStringController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/hello/demo/controller/RequestBodyStringController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/RequestBodyStringController.class.uniqueId0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hello/demo/controller/RequestBodyStringController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/demo/controller/RequestBodyStringController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../기본편/DIP,OCP/.gradle/7.6/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../기본편/DIP,OCP/.gradle/7.6/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../기본편/DIP,OCP/.gradle/7.6/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../기본편/DIP,OCP/.gradle/7.6/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../기본편/DIP,OCP/.gradle/7.6/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../기본편/DIP,OCP/.gradle/7.6/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../기본편/DIP,OCP/.gradle/7.6/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../기본편/DIP,OCP/.gradle/7.6/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../기본편/DIP,OCP/.gradle/7.6/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../기본편/DIP,OCP/.gradle/7.6/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../기본편/DIP,OCP/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../기본편/DIP,OCP/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../기본편/DIP,OCP/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/../기본편/DIP,OCP/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../기본편/DIP,OCP/build/classes/java/main/hello/demo/DemoApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/../기본편/DIP,OCP/build/classes/java/main/hello/demo/DemoApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../기본편/DIP,OCP/build/classes/java/main/hello/demo/repository/MemoryMemberRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../기본편/DIP,OCP/build/classes/java/main/hello/demo/repository/MemoryMemberRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../기본편/DIP,OCP/build/classes/java/main/hello/demo/service/MemberService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../기본편/DIP,OCP/build/classes/java/main/hello/demo/service/MemberService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../기본편/DIP,OCP/build/classes/java/main/hello/demo/service/MemberServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../기본편/DIP,OCP/build/classes/java/main/hello/demo/service/MemberServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../기본편/DIP,OCP/build/classes/java/test/hello/demo/service/justTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../기본편/DIP,OCP/build/classes/java/test/hello/demo/service/justTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../기본편/DIP,OCP/build/reports/tests/test/classes/hello.demo.service.justTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/../기본편/DIP,OCP/build/reports/tests/test/classes/hello.demo.service.justTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../기본편/DIP,OCP/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../기본편/DIP,OCP/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../기본편/DIP,OCP/build/reports/tests/test/packages/hello.demo.service.html" beforeDir="false" afterPath="$PROJECT_DIR$/../기본편/DIP,OCP/build/reports/tests/test/packages/hello.demo.service.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../기본편/DIP,OCP/build/test-results/test/TEST-hello.demo.service.justTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../기본편/DIP,OCP/build/test-results/test/TEST-hello.demo.service.justTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../기본편/DIP,OCP/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../기본편/DIP,OCP/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../기본편/DIP,OCP/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/../기본편/DIP,OCP/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../기본편/DIP,OCP/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../기본편/DIP,OCP/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../기본편/DIP,OCP/build/tmp/compileJava/compileTransaction/stash-dir/MemberSelectionImpl.class.uniqueId0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../기본편/DIP,OCP/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../기본편/DIP,OCP/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../기본편/DIP,OCP/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../기본편/DIP,OCP/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../기본편/DIP,OCP/src/main/java/hello/demo/DemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../기본편/DIP,OCP/src/main/java/hello/demo/DemoApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../기본편/DIP,OCP/src/main/java/hello/demo/repository/MemoryMemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../기본편/DIP,OCP/src/main/java/hello/demo/repository/MemoryMemberRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../기본편/DIP,OCP/src/main/java/hello/demo/service/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../기본편/DIP,OCP/src/main/java/hello/demo/service/MemberService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../기본편/DIP,OCP/src/main/java/hello/demo/service/MemberServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../기본편/DIP,OCP/src/main/java/hello/demo/service/MemberServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../기본편/DIP,OCP/src/test/java/hello/demo/service/justTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../기본편/DIP,OCP/src/test/java/hello/demo/service/justTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +130,7 @@
       <updated>1676716026146</updated>
       <workItem from="1676716027806" duration="101000" />
       <workItem from="1677327886172" duration="489000" />
-      <workItem from="1677328430927" duration="4220000" />
+      <workItem from="1677328430927" duration="11206000" />
     </task>
     <servers />
   </component>

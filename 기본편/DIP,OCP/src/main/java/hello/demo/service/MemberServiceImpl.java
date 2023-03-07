@@ -3,15 +3,25 @@ package hello.demo.service;
 import hello.demo.domain.Member;
 import hello.demo.repository.MemberRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.lang.Nullable;
 import org.springframework.stereotype.Component;
 
 import java.util.*;
 
 @Component
 public class MemberServiceImpl implements MemberService{
-    private final MemberRepository memberRepository ;
+    private MemberRepository memberRepository ;
+    private Member member;
+    public MemberRepository getMemberRepository() {
+        return this.memberRepository;
+    }
     @Autowired
-    public MemberServiceImpl(MemberRepository memberRepository){
+    public void forTest(@Nullable Member member){
+        System.out.println(member+"sdsd");
+    }
+
+    @Autowired
+    public void setMemberRepository(MemberRepository memberRepository){
         this.memberRepository=memberRepository;
     }
     @Override

@@ -6,6 +6,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.util.StreamUtils;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.io.*;
@@ -39,8 +40,9 @@ public class RequestBodyStringController {
     }
     @ResponseBody
     @PostMapping("/request-body-string-v4")
-    public String requestBodyStringV4(@RequestBody String message){
+    public String requestBodyStringV4(@RequestBody String message, @RequestParam String name){
         log.info("messageBody={}",message);
+        log.info("name={}",name);
         return "what";
     }
 

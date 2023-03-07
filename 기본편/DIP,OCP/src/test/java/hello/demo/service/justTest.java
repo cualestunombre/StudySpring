@@ -1,25 +1,23 @@
 package hello.demo.service;
+import hello.demo.DemoApplication;
+
 import hello.demo.domain.Member;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-
+import hello.demo.DemoApplication.*;
 import java.util.List;
+import hello.demo.domain.Hi;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Component;
 
 public class justTest {
     @Test
     void justtest(){
         AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext(hello.demo.DemoApplication.class);
-        MemberService memberService = ac.getBean(MemberService.class);
-        memberService.join(new Member(12));
-        memberService.join(new Member(13));
-        List<Member> members = memberService.findMembers();
-        MemberSelection memberSelection = ac.getBean(MemberSelection.class);
-        memberSelection.select();
-        for(Member member:members){
-            System.out.println(member.getLanguage());
-        }
+        NetworkService networkService = ac.getBean(NetworkService.class);
 
 
 
-    }
-}
+
+    }}
+
