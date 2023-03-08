@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <tr th:each="user,userStat : ${list}">
+    <td>[[|${user.name} ${user.age}      |]]     ㅋ ㅋ ㅋ ㅋ ㅋ</td>
+      <td>[[${userStat.current}]]</td>
+  </tr>
+</body>
+</html>

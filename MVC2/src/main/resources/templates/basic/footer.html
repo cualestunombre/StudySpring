@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <footer th:fragment="copy">
+    <div id="copy"></div>
+  </footer>
+  <footer id="param" th:fragment="copyParam (param1,param2)">
+    <div>[[${param1}]]</div>
+    <div>[[${param2}]]</div>
+  </footer>
+</body>
+</html>

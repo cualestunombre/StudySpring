@@ -6,10 +6,13 @@ import lombok.Data;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.util.MultiValueMap;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.annotation.PostConstruct;
+import javax.servlet.annotation.WebServlet;
 import java.util.*;
 @RequestMapping("/basic/items")
 @RequiredArgsConstructor
@@ -23,15 +26,21 @@ public class BasicItemController {
     private final ItemRepository itemRepository;
     @GetMapping("/json")
     @ResponseBody
-    public Price responsePrice(){
+    public Price responsePrice(@RequestHeader MultiValueMap<String,String> headerMap){
+        Set<String> keys = headerMap.keySet();
+        for (String key : keys){
+            List<String> headerInfo = headerMap.get(key);
+            System.out.print("key: "+key+" value: ");
+            headerInfo.forEach(System.out::println);
+        }
         Price price = new Price();
         price.setPrice(5000L);
         price.setName("삼성전자");
         return price;
     }
+
     @GetMapping
     public String items(Model model){
-
         List<Item> items = itemRepository.findAll();
         model.addAttribute("items",items);
         return "basic/items";

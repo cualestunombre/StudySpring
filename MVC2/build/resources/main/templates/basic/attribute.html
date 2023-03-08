@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .textlarge{
+            background-color:red;
+        }
+        .largetext{
+            background-color:blue;
+        }
+        .green{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+  <h1>속성 설정</h1>
+  <input type="text" name="mock" th:name="userA">
+  <h1>속성 추가</h1>
+  -th:attrappend = <input type="text" class="text" th:attrappend="class='large'">
+  <br>
+  -th:attrprepend = <input type="text" class="text" th:attrprepend="class='large'">
+  <br>
+  -th:classappend = <input type="text" class="text" th:classappend="'green'">
+  <br>
+  -th:checked o = <input type="text" th:checked="true">
+  <br>
+  -th:checked x = <input type="text" th:checked="false">
+  <br>
+  checked x = <input type="text" checked="false">
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+  var name = [[${list[0].name}]];
+  var age = [[${list[0].age}]];
+  var comment = /*sdsd*/ 5;
+  var user = [[${list[0]}]]
+  console.log(comment);
+</script>
+<script th:inline="javascript">
+  var name = [[${list[0].name}]];
+  var age = [[${list[0].age}]];
+  var comment = /*[[${list[0].age}]]*/ "sd";
+  var use = [[${list[0]}]];
+  [# th:each="user, stat : ${list}"]
+  var user[[${stat.count}]] = [[${user}]];
+  [/]
+</script>
+</html>

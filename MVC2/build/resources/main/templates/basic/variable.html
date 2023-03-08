@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1 > <div> 리스트 : [[${people[0].getName()}]]</div></h1>
+    <h1> <div> 맵 :  [[${peopleMap['seokwoo'].age}]]</div></h1>
+    <h1> <div th:with="data=${people[0]}, fata=${peopleMap['seokwoo']}">[[${data.getName()}]] [[${fata.getAge()}]]</div></h1>
+</body>
+</html>

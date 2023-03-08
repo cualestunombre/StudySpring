@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <h1>세션 : [[${session}]]</h1>
+  <h1>응답 : [[${response}]]</h1>
+  <h1>요청 : [[${request}]]</h1>
+  <h1>서블릿 컨택스트 : [[${servletContext}]]</h1>
+  <h1>스프링빈 : [[${@helloBean.hello("뭐야")}]]</h1>
+</body>
+</html>

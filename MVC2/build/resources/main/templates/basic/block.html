@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<th:block th:each="user : ${list}">
+  <div>
+  [[${user.name}]] [[${user.age}]]
+  </div>
+
+</th:block>
+
+
+</body>
+</html>

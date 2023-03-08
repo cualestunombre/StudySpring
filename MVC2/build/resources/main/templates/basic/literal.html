@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <div th:text="'hello '+' world'"></div>
+  <div>[[${data} + ' world']]</div>
+<div>[[|${data} world|]]</div>
+<div>[[|@{./hello/{data}(data=${data})} ㅋㅋㅋㅋㅋㅋ|]]</div>
+<div>[[2+2]]</div>
+<div>[[2==3]]</div>
+<div>[[${null}]]</div> <!-- null은 표시 되지 않는다-->
+<div>[[2>=3 ? '정답' : '오답']]</div>
+</body>
+</html>

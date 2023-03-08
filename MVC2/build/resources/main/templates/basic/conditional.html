@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<tr th:each="user,userStat : ${list}">
+  <td th:if="${user.age} >= 20">성인</td>
+  <td th:if="${user.age} < 20">미성년자</td>
+  <td>[[|${user.name} ${user.age}      |]]</td>
+  <br>
+</tr>
+</body>
+</html>
