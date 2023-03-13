@@ -99,6 +99,14 @@ public class BasicController {
     public String fragment(){
         return "basic/fragment";
     }
+    @GetMapping("/layout")
+    public String layout(){
+        return "basic/layout";
+    }
+    @GetMapping("/layoutExtend")
+    public String layoutExtend(){
+        return "basic/layoutExtend";
+    }
     @Component("helloBean")
     static class HelloBean{
         public String hello(String data){
