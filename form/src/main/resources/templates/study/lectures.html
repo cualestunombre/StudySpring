@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymleaf.org" >
+<head>
+    <meta charset="UTF-8">
+    <title>강좌 리스트</title>
+</head>
+<body>
+    <button><a href="/study/addlecture">과목 추가</a></button>
+  <div th:each="lecture : ${lectures}">
+      <h1>[[|과목명 : ${lecture.getName()}|]]</h1>
+      <h2>[[|가격 : ${lecture.getPrice()}|]]</h2>
+      <h3>과목</h3>
+      <div>[[${lecture.getSubject()!=null ? lecture.getSubject().getDescription() : null}]]</div>
+      <h3>대상 <br>
+      <div th:each = " name : ${lecture.target}">[[${name.getDescription()}]]</div>
+      </h3>
+      <button><a th:href="|/study/edit/${lecture.getId()}|">수정</a></button>
+  </div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>강의추가</title>
+</head>
+<body>
+    <form action="/study/addlecture" method="post" th:object="${lecture}">
+        <div>
+            <label for="lectureName">강좌명</label>
+            <input type="text" id="lectureName" th:field="*{name}" placeholder="이름을 입력하세요">
+        </div>
+        <div>
+            <label for="lecturePrice">가격</label>
+            <input type="text" id="lecturePrice" th:field="*{price}" placeholder="가격을 설정하세요">
+        </div>
+        <div>과목</div>
+        <div th:each="subject : ${subjectTypes}" class="form-check form-check-inline">
+            <input type="radio" th:field="*{subject}" th:value="${subject.name}" class="form-check-input">
+            <label th:for="${#ids.prev('subject')}" th:text="${subject.getDescription()}"></label>
+        </div>
+        <div>대상</div>
+        <div>
+            <div class="form-check form-check-inline" th:each="target : ${targetTypes}">
+                <input type="checkbox"  th:field="*{target}" class="form-check-input" th:value="${target.name}">
+                <label for="${#ids.prev('target')}" th:text="${target.getDescription()}"class="form-check-label">판매 오픈</label>
+            </div>
+        </div>
+        <button type="submit">제출</button>
+    </form>
+
+    <button><a href="/study/lectures">목록으로</a></button>
+</body>
+</html>
