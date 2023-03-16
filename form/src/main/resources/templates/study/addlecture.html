@@ -3,21 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <title>강의추가</title>
+    <style>
+        .field-error{
+            color:red;
+        }
+
+    </style>
 </head>
 <body>
     <form action="/study/addlecture" method="post" th:object="${lecture}">
         <div>
             <label for="lectureName">강좌명</label>
             <input type="text" id="lectureName" th:field="*{name}" placeholder="이름을 입력하세요">
+            <div class="field-error" th:errors="*{name}"></div>
         </div>
         <div>
             <label for="lecturePrice">가격</label>
             <input type="text" id="lecturePrice" th:field="*{price}" placeholder="가격을 설정하세요">
+            <div class="field-error" th:errors="*{price}"></div>
         </div>
         <div>과목</div>
         <div th:each="subject : ${subjectTypes}" class="form-check form-check-inline">
             <input type="radio" th:field="*{subject}" th:value="${subject.name}" class="form-check-input">
             <label th:for="${#ids.prev('subject')}" th:text="${subject.getDescription()}"></label>
+            <div class="field-error" th:errors="*{subject}"></div>
         </div>
         <div>대상</div>
         <div>
@@ -25,6 +34,7 @@
                 <input type="checkbox"  th:field="*{target}" class="form-check-input" th:value="${target.name}">
                 <label for="${#ids.prev('target')}" th:text="${target.getDescription()}"class="form-check-label">판매 오픈</label>
             </div>
+            <div class="field-error" th:errors="*{target}"></div>
         </div>
         <button type="submit">제출</button>
     </form>
