@@ -15,6 +15,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import org.springframework.util.StringUtils;
 
 
+import java.lang.reflect.Array;
 import java.util.List;
 import java.util.*;
 @Slf4j
@@ -82,6 +83,20 @@ public class ValidationItemControllerV4 {
         item.setPrice(form.getPrice());
         itemRepository.update(itemId, item);
         return "redirect:/validation/v4/items/{itemId}";
+    }
+    @ResponseBody
+    @PostMapping("/api")
+    public Object handleApi(@Validated @RequestBody ItemSaveForm item, BindingResult bindingResult){
+        if(bindingResult.hasErrors()){
+            System.out.println("asdsd");
+            return bindingResult.getAllErrors();
+        }
+        List<Object> list = new ArrayList<>(); // 와일드 카드가 쓰인 객체는 쓰기가 불가능 함
+        Map<String,ItemSaveForm> map = new HashMap();
+        map.put("item",item);
+        list.add(map);
+
+        return list ;
     }
 
 }
