@@ -1,6 +1,7 @@
 package hello.login.web;
 
 import hello.login.domain.member.MemberRepository;
+import hello.login.web.argumentresolver.Login;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
@@ -25,13 +26,22 @@ public class HomeController {
         return "home";
     }
     @GetMapping("/")
-    public String homeLoginV3Spring(@SessionAttribute(name=SessionConst.LOGIN_MEMBER, required = false) Member loginMember,
-                                    Model model){
-        if(loginMember==null) return "home";
-
+    public String homeLoginV3ArgumentResolver(@Login Member loginMember, Model model){
+        if(loginMember==null){ return "home";}
+        else{
+            System.out.println(loginMember);
+        }
         model.addAttribute("member",loginMember);
         return "loginHome";
     }
+//    @GetMapping("/")
+//    public String homeLoginV3Spring(@SessionAttribute(name=SessionConst.LOGIN_MEMBER, required = false) Member loginMember,
+//                                    Model model){
+//        if(loginMember==null) return "home";
+//
+//        model.addAttribute("member",loginMember);
+//        return "loginHome";
+//    }
 //    @GetMapping("/")
 //    public String homeLoginV3(HttpServletRequest req,Model model){
 //        HttpSession session = req.getSession(false);
