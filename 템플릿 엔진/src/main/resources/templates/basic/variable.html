@@ -6,6 +6,8 @@
 </head>
 <body>
     <h1 > <div> 리스트 : [[${people[0].getName()}]]</div></h1>
+    <h1>실험 : [[${peopleMap[people[0].getName()]}]]</h1>
+    <h1>스프링 빈 : [[${@basicController}]]</h1>
     <h1> <div> 맵 :  [[${peopleMap['seokwoo'].age}]]</div></h1>
     <h1> <div th:with="data=${people[0]}, fata=${peopleMap['seokwoo']}">[[${data.getName()}]] [[${fata.getAge()}]]</div></h1>
 </body>
