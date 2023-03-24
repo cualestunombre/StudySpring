@@ -105,7 +105,7 @@ public class ValidationItemControllerV2 {
 //    @PostMapping("/add")
 //    public String addItemV3(@ModelAttribute Item item, BindingResult bindingResult,RedirectAttributes redirectAttributes, Model model) {
 //        if(!StringUtils.hasText(item.getItemName())){
-//            bindingResult.addError(new FieldError("item","itemName",item.getItemName(),false,new String[]{"range.item.price"},null,null));
+//            bindingResult.addError(new FieldError("item","itemName",\,false,new String[]{"range.item.price"},null,null));
 //        }
 //        if(item.getPrice()==null || item.getPrice() < 1000 || item.getPrice()>1000000){
 //            bindingResult.addError(new FieldError("item","price",item.getPrice(),false,new String[]{"range.item.price"},new Object[]{1000,1000000},null));
