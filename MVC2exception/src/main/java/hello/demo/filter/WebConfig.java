@@ -1,16 +1,21 @@
 package hello.demo.filter;
 
 import hello.demo.interceptor.LogInterceptor;
+import hello.demo.resolver.MyHandlerExceptionResolver;
+import hello.demo.resolver.UserHandlerExceptionResolver;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.HandlerExceptionResolver;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 import javax.servlet.DispatcherType;
 import javax.servlet.Filter;
 import javax.servlet.FilterRegistration;
+import java.util.List;
+
 @Configuration
 public class WebConfig implements WebMvcConfigurer {
 //    @Autowired
@@ -35,5 +40,10 @@ public class WebConfig implements WebMvcConfigurer {
                         "/css/**","/*.ico",
                         "/error","error-page/**"
                         );
+    }
+    @Override
+    public void extendHandlerExceptionResolvers(List<HandlerExceptionResolver> resolvers){
+        resolvers.add(new MyHandlerExceptionResolver());
+        resolvers.add(new UserHandlerExceptionResolver());
     }
 }
