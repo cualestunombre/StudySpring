@@ -1,8 +1,9 @@
 package hello.demo.domain;
 
-import javax.persistence.*;
+import org.springframework.stereotype.Component;
 
-@Entity
+
+@Component
 public class Member {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

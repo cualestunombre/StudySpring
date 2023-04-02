@@ -90,7 +90,7 @@ public class LoginController {
 //        log.info("login? ={}",loginMember);
 //
 //        if(loginMember==null){
-//            bindingResult.reject("loginFail","아이디ㄷ 또는 비밀번호가 맞지 않습니다");
+//            bindingResult.reject("loginFail","아이디 또는 비밀번호가 맞지 않습니다");
 //            return "login/loginForm";
 //        }
 //        Cookie cookie = new Cookie("memberId",String.valueOf(loginMember.getId()));

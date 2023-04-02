@@ -52,6 +52,7 @@ public class ExceptionTest {
     }
     @RequestMapping("/error-page/500")
     public String error500(HttpServletResponse res,HttpServletRequest req) throws IOException{
+
         printErrorInfo(req);
         return "error-page/500";
     }

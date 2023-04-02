@@ -18,7 +18,7 @@ public class LogIntercepter implements HandlerInterceptor {
         String requestURI = req.getRequestURI();
         String uuid = UUID.randomUUID().toString();
         req.setAttribute(LOG_ID,uuid);
-        if(handler instanceof HandlerMethod){
+        if(handler instanceof HandlerMethod){ //핸들러가 static파일 제공인지, 컨트롤러 인지 구분할 수 있음
             HandlerMethod hm = (HandlerMethod) handler;
         }
         log.info("REQUEST {} {} {}",uuid,requestURI,handler);
@@ -36,7 +36,7 @@ public class LogIntercepter implements HandlerInterceptor {
         if(ex!=null){
             log.error("afterCompletion error!!",ex);
         }
-        res.setContentLength(202);
+        res.setContentLength(202); // 의미가 없음
     }
 
 }
