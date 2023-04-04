@@ -9,6 +9,7 @@ public class Member {
 
     public Member(){
 
+
     }
 
     public Member(String memberId, int money){

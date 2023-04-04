@@ -1,11 +1,10 @@
 package hello.jdbc.connection;
 
-import hello.jdbc.MemberRepositoryV0;
+import hello.jdbc.repository.MemberRepositoryV0;
 import hello.jdbc.domain.Member;
 import lombok.extern.slf4j.Slf4j;
 import static org.assertj.core.api.Assertions.*;
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
 
 import java.sql.Connection;
 import java.sql.SQLException;
