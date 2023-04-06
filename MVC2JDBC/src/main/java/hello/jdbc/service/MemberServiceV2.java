@@ -16,7 +16,7 @@ public class MemberServiceV2 {
     private final MemberRepositoryV2 memberRepository;
 
     public void accountTransfer(String fromId, String toId, int money) throws SQLException{
-        Connection con = dataSource.getConnection();
+        Connection con = dataSource.getConnection(); // 전달받은 커넥션
         try{
             con.setAutoCommit(false); //autocommit을 해제함
             bizLogic(con,fromId,toId,money);
@@ -45,7 +45,7 @@ public class MemberServiceV2 {
     private void release(Connection con){
         if(con!=null){
             try{
-                con.setAutoCommit(true);
+                con.setAutoCommit(true); //풀을 고려해서, 커넥션의 설정이 공유 됨
                 con.close();
             }catch(Exception e){
                 log.info("error",e);

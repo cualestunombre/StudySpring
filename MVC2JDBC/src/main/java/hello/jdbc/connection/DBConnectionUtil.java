@@ -15,7 +15,7 @@ public class DBConnectionUtil {
             log.info("get connection={}, class={}",connection,connection.getClass());
             return connection;
         }catch(SQLException e){
-            throw new IllegalStateException(e);
+            throw new IllegalStateException(e); // 예외처리가 강제 되지는 않음
         }
     }
 }

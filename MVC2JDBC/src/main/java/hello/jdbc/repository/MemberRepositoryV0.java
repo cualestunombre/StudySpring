@@ -24,7 +24,7 @@ public class MemberRepositoryV0 {
             pstmt= connection.prepareStatement(sql);
             pstmt.setString(1,member.getMemberId());
             pstmt.setInt(2,member.getMoney());
-            pstmt.executeUpdate();
+            pstmt.executeUpdate(); // 결과를 반환하지 않음
             return member;
         }catch(SQLException e){
             log.error("db error",e);

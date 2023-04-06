@@ -61,6 +61,7 @@ public class MemberRepositoryV2 {
         }
     }
     public Member findById(Connection con,String memberId) throws SQLException{ //커넥션 직접 제공
+        // 커넥션을 유지해야 하니까!!!!
         String sql = "select * from member where member_id = ? ";
         PreparedStatement pstmt = null;
         ResultSet rs = null;

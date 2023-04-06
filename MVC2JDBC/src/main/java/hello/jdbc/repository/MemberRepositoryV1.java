@@ -15,7 +15,7 @@ import java.util.NoSuchElementException;
 @Component
 @Slf4j
 public class MemberRepositoryV1 {
-    private final DataSource dataSource;
+    private final DataSource dataSource; // 전달 받은 것
     public MemberRepositoryV1(DataSource dataSource){
         this.dataSource=dataSource;
     }
@@ -26,7 +26,7 @@ public class MemberRepositoryV1 {
         PreparedStatement pstmt = null;
 
         try{
-            connection=getConnection();
+            connection=getConnection(); // 커넥션을 전달 받음 -> 직접 커넥션을 뚫는게 아님
             pstmt= connection.prepareStatement(sql);
             pstmt.setString(1,member.getMemberId());
             pstmt.setInt(2,member.getMoney());
@@ -90,7 +90,7 @@ public class MemberRepositoryV1 {
             pstmt = con.prepareStatement(sql);
             pstmt.setString(1,memberId);
 
-            rs = pstmt.executeQuery();
+            rs = pstmt.executeQuery(); // 결과를 리턴함
 
             if(rs.next()){
                 Member member = new Member();
