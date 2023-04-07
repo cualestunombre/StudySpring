@@ -22,7 +22,7 @@ public class MemberServiceV3_2 {
         txTemplate.executeWithoutResult(status->{
             try{
                 bizLogic(fromId,toId,money);
-            }catch(SQLException e){ //체크 예외는 롤백 없이 커밋한다
+            }catch(SQLException e){ //체크 예외는 롤백 없이 커밋한다, 언체크 예외만 롤백 한다
                 throw new IllegalStateException(e); //언체크 예외
             }
         });
