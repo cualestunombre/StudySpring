@@ -22,7 +22,7 @@ public class UncheckedAppTest {
         }catch(Exception e){
             log.info("ex",e);
         }
-    } 
+    }
     static class Controller {
         Service service = new Service();
 
