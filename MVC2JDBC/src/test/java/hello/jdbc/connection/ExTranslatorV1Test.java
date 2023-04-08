@@ -39,7 +39,7 @@ public class ExTranslatorV1Test {
             try{
                 repository.save(new Member(memberId,0));
                 log.info("saveId={}",memberId);
-            }catch(MyDuplicateKeyException e){ //예외를 분리해보고 싶다!!  
+            }catch(MyDuplicateKeyException e){ //예외를 분리해보고 싶다!!
                 log.info("키 중복!!");
                 throw e;
             }catch(MyDbException e){
