@@ -39,7 +39,7 @@ public class ConnectionTest {
         dataSource.setUsername(USERNAME);
         dataSource.setPassword(PASSWORD);
         dataSource.setMaximumPoolSize(10);
-        dataSource.setPoolName("MyPool");
+        dataSource.setPoolName("MyPool"); // 데이터 풀을 정의
         useDataSource(dataSource);
         Thread.sleep(1000);
 

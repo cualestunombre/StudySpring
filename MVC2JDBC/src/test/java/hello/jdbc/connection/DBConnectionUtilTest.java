@@ -8,7 +8,9 @@ import org.junit.jupiter.api.Test;
 
 import java.sql.Connection;
 import java.sql.SQLException;
-
+/*
+기본적인 JDBC 커넥션을 다루고자 함
+ */
 @Slf4j
 public class DBConnectionUtilTest {
     MemberRepositoryV0 repositoryV0 = new MemberRepositoryV0();

@@ -8,7 +8,9 @@ import org.springframework.stereotype.Component;
 import java.io.IOException;
 import java.sql.*;
 import java.util.NoSuchElementException;
-
+/*
+단순 Connection이 획득 된 repository
+ */
 
 @Component
 @Slf4j
@@ -102,7 +104,7 @@ public class MemberRepositoryV0 {
         }
     }
 
-    private void close(Connection con, Statement stmt, ResultSet rs){
+    private void close(Connection con, Statement stmt, ResultSet rs){ // close가 비효율적으로 작성되어 있다
         if(rs != null){
             try{
                 rs.close();

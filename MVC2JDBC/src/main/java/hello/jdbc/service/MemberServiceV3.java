@@ -13,7 +13,7 @@ import java.sql.SQLException;
 @Slf4j
 @RequiredArgsConstructor
 public class MemberServiceV3 {
-    private final PlatformTransactionManager transactionManager;
+    private final PlatformTransactionManager transactionManager; // 트랜잭션 매니져가 추가 됨
     private final MemberRepositoryV3 memberRepository;
 
     public void accountTransfer(String fromId,String toId, int money) throws SQLException{

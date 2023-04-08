@@ -109,7 +109,7 @@ public class MemberRepositoryV1 {
     }
 
     private void close(Connection con, Statement stmt, ResultSet rs){
-        JdbcUtils.closeResultSet(rs);
+        JdbcUtils.closeResultSet(rs); // 자원해제를 제공함(편의 메서드)
         JdbcUtils.closeConnection(con);
         JdbcUtils.closeStatement(stmt);
     }
