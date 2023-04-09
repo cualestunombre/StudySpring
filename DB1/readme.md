@@ -7,6 +7,10 @@ MemberRepositoryV3 : MemberRepositoryV1에서 동기화 매니져에게 반납�
 MemberServiceV3 : 트랜잭션 매니져를 추가하여, 서비스 계층이 JDBC기술에 종속되는 것을 막은 서비스
 MemberServiceV3_2 : 트랜잭션 템플릿을 사용하여, 패턴의 반복을 줄임
 MemberServiceV3_3 : 트랜잭션 AOP를 사용하여, 서비스 계층에서 트랜잭션 관련 코드를 없애버림
+MemberRepositoryV4_1 : 인터페이스를 적용함 예외를 런타임에러로 변경하여 던짐
+MemberRepositoryV4_2 : 예외를 추상화하여 던짐 
+MemberRepositoryV5 : 예외처리를 JDBCtemplate이 처리하게 함 
+MemberServiceV4 : 예외처리 종속성을 없애버림
 
 테스트 : 
 MemberRepositoryV1Test : 데이터 소스 활용 repository 테스트
@@ -17,7 +21,9 @@ MemberServiceV3_1Test : 트랜잭션 매니져를 추가하여, 서비스 계층
 MemberServiceV3_2Test : 트랜잭션 템플릿 테스트
 MemberServiceV3_3Test : 트랜잭션 AOP 테스트
 MemberServiceV3_4Test : 트랜잭션 매니져 및 데이터 소스 자동등록 
+MemberServiceV4 : 예외처리 종속성 제거 테스트 
 CheckedTest : 체크예외에 대한 테스트
 UncheckedTest : 언체크예외(런타임)에 대한 테스트
 CheckedAppTest : 체크예외app에 대한 테스트 (문제점 1. 어차피 해결 못함 2. 종속성 발생)
 UncheckedAppTest : 언체크예외app에 대한 테스트(어차피 해결 못할 예외 그냥 명시하지 않고, 공통처리하는 것이 좋음)
+ExTranslatorV1Test : 예외를 해석해서 던져 줌 

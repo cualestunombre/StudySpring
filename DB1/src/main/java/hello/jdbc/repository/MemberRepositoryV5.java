@@ -15,7 +15,7 @@ public class MemberRepositoryV5 implements MemberRepository{
     public MemberRepositoryV5(DataSource dataSource){
         template=new JdbcTemplate(dataSource);
 
-    }
+}
     @Override
     public Member save(Member member){
         String sql = "insert into member(member_id,money) values(?,?)";
