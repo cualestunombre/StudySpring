@@ -1,6 +1,7 @@
 package hello.itemservice.repository;
 
 import hello.itemservice.domain.Item;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.RowMapper;
@@ -9,13 +10,15 @@ import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.jdbc.core.namedparam.SqlParameterSource;
 import org.springframework.jdbc.core.simple.SimpleJdbcInsert;
+import org.springframework.stereotype.Repository;
 import org.springframework.util.StringUtils;
 
 import javax.sql.DataSource;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
-
+@Repository
+@Slf4j
 public class JdbcTemplateItemRepositoryV3 implements ItemRepository{
     private final NamedParameterJdbcTemplate template;
     private final SimpleJdbcInsert jdbcInsert;
@@ -30,12 +33,13 @@ public class JdbcTemplateItemRepositoryV3 implements ItemRepository{
     public Item save(Item item){
         SqlParameterSource param = new BeanPropertySqlParameterSource(item);
         Number key = jdbcInsert.executeAndReturnKey(param);
+        item.setId((Long)key);
         return item;
     }
 
     @Override
     public void update(Long itemId,ItemUpdateDto updateParam){
-        String sql = "update item " + "set item_name=:itemName, price=:price, quantity=:quantity "+"where id:id";
+        String sql = "update item " + "set item_name=:itemName, price=:price, quantity=:quantity "+"where id=:id";
         SqlParameterSource param = new MapSqlParameterSource().addValue("itemName",updateParam.getItemName())
                 .addValue("price",updateParam.getPrice())
                 .addValue("quantity",updateParam.getQuantity())
@@ -45,7 +49,7 @@ public class JdbcTemplateItemRepositoryV3 implements ItemRepository{
 
     @Override
     public Optional<Item> findById(Long id){
-        String sql = "select id, item_name, price, quantity from item where id=?";
+        String sql = "select id, item_name, price, quantity from item where id=:id";
         try{
             Map<String,Object> param = Map.of("id",id);
             Item item = template.queryForObject(sql,param,itemRowMapper());
@@ -83,5 +87,6 @@ public class JdbcTemplateItemRepositoryV3 implements ItemRepository{
     private RowMapper<Item> itemRowMapper(){
         return BeanPropertyRowMapper.newInstance(Item.class);
     }
+
 
 }
