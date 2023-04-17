@@ -6,7 +6,7 @@
 
     <insert id="save" useGeneratedKeys="true" keyProperty="id">
         insert into item (item_name, price, quantity)
-        values (#{itemName}, #{price}, #{quantity})
+        values (#{itemName}, #{price}, #{quantity}) <!-- key로 값 세팅까지 다해줌 매우 편리~-->
     </insert>
 
     <update id="update">
