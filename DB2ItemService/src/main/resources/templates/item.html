@@ -8,6 +8,9 @@
         .container {
             max-width: 560px;
         }
+        .delete{
+            background-color: red;
+        }
     </style>
 </head>
 <body>
@@ -53,8 +56,22 @@
                     th:onclick="|location.href='@{/items}'|"
                     type="button">목록으로</button>
         </div>
+        <div class="col">
+            <button th:value="${item.id}" class="w-100 btn btn-secondary btn-lg delete"
+                    onclick="handleDelete(event)"
+                    type="button">상품삭제</button>
+        </div>
     </div>
 
 </div> <!-- /container -->
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script>
+    async function handleDelete(e){
+        await axios.delete(`http://localhost:8080/items/${e.target.value}`);
+        console.log("ok");
+        location.href="http://localhost:8080/items";
+
+    }
+</script>
 </body>
 </html>

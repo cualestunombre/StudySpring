@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Optional;
 
 public interface ItemService {
-
+    void delete(Long itemId);
     Item save(Item item);
 
     void update(Long itemId, ItemUpdateDto updateParam);

@@ -22,6 +22,11 @@ public class MemoryItemRepository implements ItemRepository {
         store.put(item.getId(), item);
         return item;
     }
+    @Override
+    public void delete(Long itemId){
+        store.remove(itemId);
+        return ;
+    }
 
     @Override
     public void update(Long itemId, ItemUpdateDto updateParam) {

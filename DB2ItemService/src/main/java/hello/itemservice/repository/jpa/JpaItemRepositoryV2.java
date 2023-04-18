@@ -22,7 +22,11 @@ public class JpaItemRepositoryV2 implements ItemRepository {
     public Item save(Item item){
         return repository.save(item);
     }
-
+    @Override
+    public void delete(Long itemId){
+        Item item = repository.findById(itemId).orElse(null);
+        repository.delete(item);
+    }
     @Override
     public void update(Long itemId, ItemUpdateDto updateParam){
         Item findItem = repository.findById(itemId).orElseThrow();

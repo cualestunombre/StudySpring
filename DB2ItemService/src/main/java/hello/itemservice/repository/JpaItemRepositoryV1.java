@@ -41,6 +41,11 @@ public class JpaItemRepositoryV1 implements ItemRepository{
         return Optional.ofNullable(item);
     }
     @Override
+    public void delete(Long itemId){
+        Item item = em.find(Item.class,itemId);
+        em.remove(item);
+    }
+    @Override
     public List<Item> findAll(ItemSearchCond cond){
         String jpql = "select i from Item i";
         Integer maxPrice = cond.getMaxPrice();

@@ -8,7 +8,11 @@
         insert into item (item_name, price, quantity)
         values (#{itemName}, #{price}, #{quantity}) <!-- key로 값 세팅까지 다해줌 매우 편리~-->
     </insert>
-
+    <delete id="delete">
+        delete
+        from item
+        where id = #{itemId}
+    </delete>
     <update id="update">
         update item
         set item_name=#{updateParam.itemName},

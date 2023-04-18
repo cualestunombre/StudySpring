@@ -8,6 +8,7 @@ import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.jdbc.support.KeyHolder;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.StringUtils;
 
 import javax.sql.DataSource;
@@ -45,6 +46,12 @@ public class JdbcTemplateItemRepositoryV1 implements ItemRepository{
     public void update(Long itemId, ItemUpdateDto updateParam){
         String sql = "update item set item_name=?, price=?, quantity=? where id=?";
         template.update(sql,updateParam.getItemName(),updateParam.getPrice(),updateParam.getQuantity(),itemId);
+    }
+    @Override
+    public void delete(Long itemId){
+        String sql = "delete from item where id=?";
+        template.update(sql,itemId);
+        return;
     }
     @Override
     public Optional<Item> findById(Long id){

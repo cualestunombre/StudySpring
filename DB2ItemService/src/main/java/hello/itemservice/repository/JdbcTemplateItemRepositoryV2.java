@@ -47,6 +47,13 @@ public class JdbcTemplateItemRepositoryV2 implements ItemRepository{
         template.update(sql,param);
 
     }
+    @Override
+    public void delete(Long itemId){
+        String sql = "delete from item where id=:id";
+        Map<String,Object> param = Map.of("id",itemId);
+        template.update(sql,param);
+        return;
+    }
 
     @Override
     public Optional<Item> findById(Long id){

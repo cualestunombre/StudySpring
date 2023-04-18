@@ -30,7 +30,11 @@ public class ItemServiceV1 implements ItemService {
     public Optional<Item> findById(Long id) {
         return itemRepository.findById(id);
     }
-
+    @Override
+    public void delete(Long id){
+        itemRepository.delete(id);
+        return;
+    }
     @Override
     public List<Item> findItems(ItemSearchCond cond) {
         return itemRepository.findAll(cond);

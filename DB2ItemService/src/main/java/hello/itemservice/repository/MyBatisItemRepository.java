@@ -22,7 +22,10 @@ public class MyBatisItemRepository implements ItemRepository{
     public void update(Long itemId,ItemUpdateDto updateParam){
         itemMapper.update(itemId, updateParam);
     }
-
+    @Override
+    public void delete(Long itemId){
+        itemMapper.delete(itemId);
+    }
     @Override
     public Optional<Item> findById(Long id){
         return itemMapper.findById(id);

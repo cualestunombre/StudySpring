@@ -10,6 +10,7 @@ public interface ItemRepository {
     Item save(Item item);
 
     void update(Long itemId, ItemUpdateDto updateParam);
+    void delete(Long itemId);
 
     Optional<Item> findById(Long id);
 

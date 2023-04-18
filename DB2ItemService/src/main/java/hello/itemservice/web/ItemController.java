@@ -53,6 +53,12 @@ public class ItemController {
         model.addAttribute("item", item);
         return "editForm";
     }
+    @DeleteMapping("/{itemId}")
+    @ResponseBody
+    public String delete(@PathVariable Long itemId){
+        itemService.delete(itemId);
+        return "ok";
+    }
 
     @PostMapping("/{itemId}/edit")
     public String edit(@PathVariable Long itemId, @ModelAttribute ItemUpdateDto updateParam) {
