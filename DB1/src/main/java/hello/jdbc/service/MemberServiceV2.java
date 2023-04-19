@@ -12,7 +12,7 @@ import java.sql.SQLException;
 @Slf4j
 @RequiredArgsConstructor
 public class MemberServiceV2 {
-    private final DataSource dataSource; // 히카리로 받으면 커넥션 풀임
+    private final DataSource dataSource; // 히카리로 받은 커넥션 풀임
     private final MemberRepositoryV2 memberRepository;
 
     public void accountTransfer(String fromId, String toId, int money) throws SQLException{

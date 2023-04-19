@@ -16,7 +16,7 @@ import javax.persistence.EntityManager;
 @Configuration
 public class NewConfig {
     private final EntityManager em;
-    private final ItemRepositoryV2 itemRepositoryV2; //spring이 알아서 주입
+    private final ItemRepositoryV2 itemRepositoryV2; //spring이 알아서 주입ㅋㅋㅋㅋ
     @Bean
     public ItemService itemService(){
 
