@@ -24,6 +24,7 @@ class ItemRepositoryTest {
 
     @Autowired
     ItemRepository itemRepository;
+    
 
 //    @Autowired
 //    PlatformTransactionManager transactionManager;
