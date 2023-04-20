@@ -10,10 +10,12 @@ MVC2 : 타임리프, 메세지/국제화, 예외처리, 검증, 세션/쿠키, �
 <br>
 DB1 : JDBC핵심개념 및 트랜잭션 기초 개념(수강완료)
 <br>
-DB2 : 다양한 DB접근 기술(JDBC template, JPA, Data JPA, QueryDsl) (수강중)
-<br>
+DB2 : 다양한 DB접근 기술(JDBC template, JPA, Data JPA, QueryDsl) (수강완료)
 <br>
 JPA : JPA 핵심개념(수강예정)
+<br>
+<br>
+
 <br>
 JPA활용 app개발 : JPA 응용(수강예정)
 <br>
