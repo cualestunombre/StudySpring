@@ -12,7 +12,7 @@ DB1 : JDBC핵심개념 및 트랜잭션 기초 개념(수강완료)
 <br>
 DB2 : 다양한 DB접근 기술(JDBC template, JPA, Data JPA, QueryDsl) (수강완료)
 <br>
-JPA : JPA 핵심개념(수강예정)
+JPA : JPA 핵심개념(수강중)
 <br>
 <br>
 
