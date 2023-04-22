@@ -12,21 +12,4 @@ DB1 : JDBC핵심개념 및 트랜잭션 기초 개념(수강완료)
 <br>
 DB2 : 다양한 DB접근 기술(JDBC template, JPA, Data JPA, QueryDsl) (수강완료)
 <br>
-JPA : JPA 핵심개념(수강중)
-<br>
-<br>
-
-<br>
-JPA활용 app개발 : JPA 응용(수강예정)
-<br>
-JPA활용 api개발 : JPA 응용(수강예정)
-<br>
-스프링 Data JPA : 스프링 Data JPA 핵심개념 (수강예정)
-<br>
-Querydsl : 복잡한 동적 쿼리 작성 (수강예정)
-<br>
-Spring 고급편 : AOP 및 각종 디자인패턴(수강예정)
-<br>
-실전 스프링부트 : 스프링부트 응용(수강예정)
-<br>
-<br>
+스프링 고급편 : 디자인 패턴 및 AOP (수강예정)
