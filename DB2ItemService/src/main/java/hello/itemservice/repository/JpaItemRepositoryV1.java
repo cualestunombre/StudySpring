@@ -16,6 +16,7 @@ import java.util.Optional;
 @Transactional
 public class JpaItemRepositoryV1 implements ItemRepository{
     private final EntityManager em;
+    //내부에 dataSource를 갖고 있다, 역시 스프링이 알아서 주입을 해준다.
 
     public JpaItemRepositoryV1(EntityManager em){
         this.em = em;

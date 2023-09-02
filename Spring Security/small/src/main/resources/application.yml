@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:h2:tcp://localhost/~/ss
+    username: sa
+  jpa:
+    hibernate:
+      ddl-auto: update
+logging:
+  level:
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+server:
+  port: 8010

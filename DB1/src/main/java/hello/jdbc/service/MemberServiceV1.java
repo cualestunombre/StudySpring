@@ -14,7 +14,7 @@ public class MemberServiceV1 {
         Member fromMember = memberRepositoryV1.findById(fromId);
         Member toMember = memberRepositoryV1.findById(toId);
         memberRepositoryV1.update(fromId, fromMember.getMoney()-money);
-        validation(toMember); // 예외가 발생
+        validation(toMember); // 예외가 발생 트랜잭션 처리기능이 없어서 롤백이 되지 않음
         memberRepositoryV1.update(toId,toMember.getMoney()+money); // 예외가 발생하면 쿼리가 실행되지 못함
 
     }

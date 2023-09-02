@@ -3,7 +3,7 @@ package hello.itemservice.repository;
 import lombok.Data;
 
 @Data
-public class ItemUpdateDto {
+public class ItemUpdateDto { //Data Transfer Object
     private String itemName;
     private Integer price;
     private Integer quantity;

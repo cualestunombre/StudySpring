@@ -11,6 +11,7 @@ import static hello.jdbc.connection.ConnectionConst.*;
 public class DBConnectionUtil {
     public static Connection getConnection(){
         try{
+            //DriverManager 자체가 DB구현체가 아니라, 등록된 DB드라이버를 관리하는 클래스이다
             Connection connection = DriverManager.getConnection(URL,USERNAME,PASSWORD);
             log.info("get connection={}, class={}",connection,connection.getClass());
             return connection;

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="output"></div>
+<input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}">
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script>
+
+
+  const url = 'http://127.0.0.1:8030/cors';
+  const csrf = document.querySelector("input").getAttribute("value");
+
+  fetch(url, {
+      method: "POST",
+      headers: {
+          "X-CSRF-TOKEN": csrf,
+      },
+      credentials: "include", // equivalent to withCredentials: true
+  })
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById("output").innerHTML = data;
+      })
+      .catch(error => {
+          console.error('Error:', error);
+      });
+
+
+
+</script>
+</body>
+</html>

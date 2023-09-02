@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="spring.demo.trace.strategy.ContextV2Test" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-07-03T12:22:33" hostname="wooui-MacBookAir.local" time="0.01">
+  <properties/>
+  <testcase name="strategyV1()" classname="spring.demo.trace.strategy.ContextV2Test" time="0.01"/>
+  <system-out><![CDATA[21:22:33.746 [Test worker] INFO spring.demo.trace.strategy.code.strategy.StrategyLogic1 - 비지니스 로직1 실행
+21:22:33.747 [Test worker] INFO spring.demo.trace.strategy.code.strategy.ContextV2 - resultTime=2
+21:22:33.748 [Test worker] INFO spring.demo.trace.strategy.code.strategy.StrategyLogic2 - 비지니스 로직2 실행
+21:22:33.748 [Test worker] INFO spring.demo.trace.strategy.code.strategy.ContextV2 - resultTime=0
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

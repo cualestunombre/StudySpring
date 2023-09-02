@@ -40,6 +40,7 @@ public class RequestBodyStringController {
     }
     @ResponseBody
     @PostMapping("/request-body-string-v4")
+    // RequestParam String name은 http content-type이 form data or 쿼리 스트링일 때만 파싱함
     public String requestBodyStringV4(@RequestBody String message, @RequestParam String name){
         log.info("messageBody={}",message);
         log.info("name={}",name);

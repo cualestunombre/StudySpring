@@ -16,7 +16,9 @@ public class ConnectionTest {
 //    @Test
 //    void driverManager() throws SQLException{
 //        Connection con1 = DriverManager.getConnection(URL,USERNAME,PASSWORD);
+            //커넥션 생성
 //        Connection con2 = DriverManager.getConnection(URL,USERNAME,PASSWORD);
+            //커넥션 생성
 //        System.out.println(con1.toString()+con1.getClass().toString());
 //        System.out.println(con2.toString()+con2.getClass().toString());
 //    }

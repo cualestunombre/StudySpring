@@ -5,13 +5,69 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75dcfc05-fdff-4d47-8c31-48a8463cf057" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/hello.demo.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hello/demo/controller/ParameterController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hello/demo/controller/RequestHeaderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MVC1서블릿/.idea/modules/MVC1서블릿.demo.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DB2ItemService/src/main/java/hello/itemservice/TestDataInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DB2ItemService/src/main/java/hello/itemservice/TestDataInit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DB2ItemService/src/main/java/hello/itemservice/repository/ItemRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DB2ItemService/src/main/java/hello/itemservice/repository/ItemRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DB2ItemService/src/main/java/hello/itemservice/repository/ItemUpdateDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DB2ItemService/src/main/java/hello/itemservice/repository/ItemUpdateDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DB2ItemService/src/main/java/hello/itemservice/repository/JdbcTemplateItemRepositoryV3.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DB2ItemService/src/main/java/hello/itemservice/repository/JdbcTemplateItemRepositoryV3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DB2ItemService/src/main/java/hello/itemservice/repository/JpaItemRepositoryV1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DB2ItemService/src/main/java/hello/itemservice/repository/JpaItemRepositoryV1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DB2ItemService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../DB2ItemService/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DB2ItemService/src/test/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../DB2ItemService/src/test/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DB2프록시/.gradle/7.6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../DB2프록시/.gradle/7.6.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DB2프록시/.gradle/7.6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../DB2프록시/.gradle/7.6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DB2프록시/.gradle/7.6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../DB2프록시/.gradle/7.6.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DB2프록시/.gradle/7.6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../DB2프록시/.gradle/7.6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DB2프록시/.gradle/7.6.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../DB2프록시/.gradle/7.6.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DB2프록시/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../DB2프록시/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DB2프록시/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/../DB2프록시/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DB2프록시/build/classes/java/test/hello/springtx/propagation/MemberServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../DB2프록시/build/classes/java/test/hello/springtx/propagation/MemberServiceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DB2프록시/build/reports/tests/test/classes/hello.springtx.propagation.MemberServiceTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/../DB2프록시/build/reports/tests/test/classes/hello.springtx.propagation.MemberServiceTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DB2프록시/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../DB2프록시/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DB2프록시/build/reports/tests/test/packages/hello.springtx.propagation.html" beforeDir="false" afterPath="$PROJECT_DIR$/../DB2프록시/build/reports/tests/test/packages/hello.springtx.propagation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DB2프록시/build/test-results/test/TEST-hello.springtx.propagation.MemberServiceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DB2프록시/build/test-results/test/TEST-hello.springtx.propagation.MemberServiceTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DB2프록시/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../DB2프록시/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DB2프록시/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/../DB2프록시/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DB2프록시/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../DB2프록시/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DB2프록시/build/tmp/compileJava/compileTransaction/stash-dir/LogRepository.class.uniqueId0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DB2프록시/build/tmp/compileJava/compileTransaction/stash-dir/MemberService.class.uniqueId1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DB2프록시/build/tmp/compileTestJava/compileTransaction/stash-dir/MemberServiceTest.class.uniqueId0" beforeDir="false" afterPath="$PROJECT_DIR$/../DB2프록시/build/tmp/compileTestJava/compileTransaction/stash-dir/MemberServiceTest.class.uniqueId0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DB2프록시/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../DB2프록시/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DB2프록시/src/main/java/hello/springtx/propagation/Log.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DB2프록시/src/main/java/hello/springtx/propagation/Log.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DB2프록시/src/main/java/hello/springtx/propagation/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DB2프록시/src/main/java/hello/springtx/propagation/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DB2프록시/src/test/java/hello/springtx/propagation/MemberServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DB2프록시/src/test/java/hello/springtx/propagation/MemberServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.6/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.6/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.6/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.6/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.6/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.6/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.6/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../login/src/main/java/hello/login/web/filter/LogFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../login/src/main/java/hello/login/web/filter/LogFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../login/src/main/java/hello/login/web/filter/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../login/src/main/java/hello/login/web/filter/WebConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../login/src/main/java/hello/login/web/interceptor/LogIntercepter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../login/src/main/java/hello/login/web/interceptor/LogIntercepter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../login/src/main/java/hello/login/web/interceptor/LoginCheckInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../login/src/main/java/hello/login/web/interceptor/LoginCheckInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hello/demo/controller/RequestBodyJsonController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/hello/demo/controller/RequestBodyJsonController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hello/demo/controller/RequestBodyStringController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/hello/demo/controller/RequestBodyStringController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hello/demo/controller/ResponseViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/hello/demo/controller/ResponseViewController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/ResponseViewController.class.uniqueId0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hello/demo/controller/RequestBodyJsonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/demo/controller/RequestBodyJsonController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hello/demo/controller/RequestBodyStringController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/demo/controller/RequestBodyStringController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hello/demo/domain/HelloData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/demo/domain/HelloData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MVC1서블릿/.gradle/7.6/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../MVC1서블릿/.gradle/7.6/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MVC1서블릿/.gradle/7.6/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../MVC1서블릿/.gradle/7.6/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MVC1서블릿/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MVC1서블릿/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MVC1서블릿/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MVC1서블릿/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MVC1서블릿/src/main/java/hello/demo/servlet/FormDataServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MVC1서블릿/src/main/java/hello/demo/servlet/FormDataServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MVC1서블릿/src/main/java/hello/demo/servlet/HelloServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MVC1서블릿/src/main/java/hello/demo/servlet/HelloServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MVC1서블릿/src/main/java/hello/demo/servlet/RequestBodyStringServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MVC1서블릿/src/main/java/hello/demo/servlet/RequestBodyStringServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MVC1서블릿/src/main/java/hello/demo/servlet/RequestParamServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MVC1서블릿/src/main/java/hello/demo/servlet/RequestParamServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MVC1서블릿/src/main/java/hello/demo/web/frontcontroller/v5/FrontControllerV5.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MVC1서블릿/src/main/java/hello/demo/web/frontcontroller/v5/FrontControllerV5.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +84,12 @@
       <state>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="demo" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -53,26 +114,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/woo/Desktop/code/StudySpring/MVC&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.annotationProcessors&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;9de0862494cc3aa211be7c76dc6b547b&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/woo/Desktop/code/StudySpring/MVC1다양한기능",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors",
+    "spring.configuration.checksum": "9de0862494cc3aa211be7c76dc6b547b",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager">
+}]]></component>
+  <component name="RunManager" selected="Spring Boot.DemoApplication (1)">
+    <configuration name="DemoApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="hello.demo.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="hello.demo.DemoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="demo.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="hello.demo.DemoApplication" />
@@ -93,6 +162,7 @@
       <workItem from="1677327886172" duration="489000" />
       <workItem from="1677328430927" duration="11206000" />
       <workItem from="1679568874588" duration="630000" />
+      <workItem from="1682494166002" duration="6020000" />
     </task>
     <servers />
   </component>

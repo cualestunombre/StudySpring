@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="620e4acb-3b2b-4fb3-9d76-f95626d62fb7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../DB2ItemService/src/test/java/hello/itemservice/domain/MybatisTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MVC1다양한기능/.idea/modules/hello.demo.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MVC1다양한기능/src/main/java/hello/demo/controller/ParameterController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MVC1다양한기능/src/main/java/hello/demo/controller/RequestHeaderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MVC1서블릿/.idea/modules/MVC1서블릿.demo.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../small/src/main/java/hello/small/config/ProjectConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../small/src/main/java/hello/small/controller/MainPageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../small/src/main/java/hello/small/controller/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../small/src/main/java/hello/small/details/CustomUserDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../small/src/main/java/hello/small/domain/Authority.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../small/src/main/java/hello/small/domain/Currency.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../small/src/main/java/hello/small/domain/EncryptionAlgorithm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../small/src/main/java/hello/small/domain/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../small/src/main/java/hello/small/domain/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../small/src/main/java/hello/small/domain/ProductDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../small/src/main/java/hello/small/domain/Token.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../small/src/main/java/hello/small/filter/CsrfTokenLogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../small/src/main/java/hello/small/repository/CustomCsrfTokenRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../small/src/main/java/hello/small/repository/JpaTokenRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../small/src/main/java/hello/small/repository/MemberRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../small/src/main/java/hello/small/repository/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../small/src/main/java/hello/small/service/AuthenticationProviderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../small/src/main/java/hello/small/service/JpaUserDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../small/src/main/java/hello/small/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../small/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../small/src/main/resources/templates/main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../small/src/main/resources/templates/product.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss/src/main/java/hello/ss/config/CustomAuthenticationFailureHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss/src/main/java/hello/ss/config/CustomAuthenticationSuccessHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss/src/main/java/hello/ss/config/CustomEntryPoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss/src/main/java/hello/ss/config/HttpBasicConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss/src/main/java/hello/ss/config/WebSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss/src/main/java/hello/ss/controller/CorsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss/src/main/java/hello/ss/controller/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss/src/main/java/hello/ss/details/DummyUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss/src/main/java/hello/ss/details/SecurityUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss/src/main/java/hello/ss/domain/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss/src/main/java/hello/ss/filter/AuthenticationLogginFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss/src/main/java/hello/ss/filter/CsrfTokenLogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss/src/main/java/hello/ss/filter/RequestValidationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss/src/main/java/hello/ss/filter/StaticKeyAuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss/src/main/java/hello/ss/provider/CustomAuthenticationProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss/src/main/java/hello/ss/services/InMemoryUserDetailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss/src/main/resources/static/hello.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss/src/main/resources/templates/cors.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss/src/main/resources/templates/error/403.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/app/src/main/java/hello/app/MemberServiceImplSecond.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/app/src/main/java/hello/app/exam/ExamRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/app/src/main/java/hello/app/exam/ExamService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/app/src/main/java/hello/app/exam/annotation/Retry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/app/src/main/java/hello/app/exam/annotation/Trace.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/app/src/main/java/hello/app/exam/aop/RetryAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/app/src/main/java/hello/app/exam/aop/TraceAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/app/src/main/java/hello/app/internalcall/CallServiceV0.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/app/src/main/java/hello/app/internalcall/CallServiceV1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/app/src/main/java/hello/app/internalcall/CallServiceV2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/app/src/main/java/hello/app/internalcall/CallServiceV3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/app/src/main/java/hello/app/internalcall/InternalService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/app/src/main/java/hello/app/internalcall/aop/CallLogAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/app/src/main/java/hello/app/member/MemberService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/app/src/main/java/hello/app/member/MemberServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/app/src/main/java/hello/app/member/annotation/ClassAop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/app/src/main/java/hello/app/member/annotation/MethodAop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/app/src/main/java/hello/app/order/OrderRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/app/src/main/java/hello/app/order/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/app/src/main/java/hello/app/order/aop/AspectV1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/app/src/main/java/hello/app/order/aop/AspectV2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/app/src/main/java/hello/app/order/aop/AspectV3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/app/src/main/java/hello/app/order/aop/AspectV4Pointcut.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/app/src/main/java/hello/app/order/aop/AspectV5Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/app/src/main/java/hello/app/order/aop/Pointcuts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/app/src/test/java/hello/app/AopTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/app/src/test/java/hello/app/internalcall/CallServiceV1Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/app/src/test/java/hello/app/internalcall/CallServiceV2Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/app/src/test/java/hello/app/internalcall/CallServiceV3Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/app/src/test/java/hello/app/pointcut/ArgsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/app/src/test/java/hello/app/pointcut/AtAnnotationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/app/src/test/java/hello/app/pointcut/AtTargetAtWithinTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/app/src/test/java/hello/app/pointcut/BeanTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/app/src/test/java/hello/app/pointcut/ExamTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/app/src/test/java/hello/app/pointcut/ExecutionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/app/src/test/java/hello/app/pointcut/ParameterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/app/src/test/java/hello/app/pointcut/ThisTargetTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/app/src/test/java/hello/app/pointcut/WithinTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/app/src/test/java/hello/app/proxyvs/BeanTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/app/src/test/java/hello/app/proxyvs/ProxyCastingTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/app/src/test/java/hello/app/proxyvs/ProxyDITest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/app/src/test/java/hello/app/proxyvs/code/ProxyDIAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/proxy-start/src/main/java/hello/proxy/app/v1/OrderControllerV1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/proxy-start/src/main/java/hello/proxy/app/v1/OrderControllerV1Impl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/proxy-start/src/main/java/hello/proxy/app/v1/OrderRepositoryV1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/proxy-start/src/main/java/hello/proxy/app/v1/OrderRepositoryV1Impl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/proxy-start/src/main/java/hello/proxy/app/v1/OrderServiceV1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/proxy-start/src/main/java/hello/proxy/app/v1/OrderServiceV1Impl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/proxy-start/src/main/java/hello/proxy/app/v2/OrderControllerV2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/proxy-start/src/main/java/hello/proxy/app/v2/OrderRepositoryV2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/proxy-start/src/main/java/hello/proxy/app/v2/OrderServiceV2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/proxy-start/src/main/java/hello/proxy/app/v3/OrderControllerV3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/proxy-start/src/main/java/hello/proxy/app/v3/OrderRepositoryV3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/proxy-start/src/main/java/hello/proxy/app/v3/OrderServiceV3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/proxy-start/src/main/java/hello/proxy/config/AppV1Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/proxy-start/src/main/java/hello/proxy/config/AppV2Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/proxy-start/src/main/java/hello/proxy/config/CglibProxyConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/proxy-start/src/main/java/hello/proxy/config/ConcreteProxyConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/proxy-start/src/main/java/hello/proxy/config/DynamicProxyBasicConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/proxy-start/src/main/java/hello/proxy/config/InterfaceProxyConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/proxy-start/src/main/java/hello/proxy/config/ProxyFactoryConfigV1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/proxy-start/src/main/java/hello/proxy/config/v1_proxy/concrete_proxy/OrderControllerConcreteProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/proxy-start/src/main/java/hello/proxy/config/v1_proxy/concrete_proxy/OrderRepositoryConcreteProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/proxy-start/src/main/java/hello/proxy/config/v1_proxy/concrete_proxy/OrderServiceConcreteProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/proxy-start/src/main/java/hello/proxy/config/v1_proxy/interface_proxy/OrderControllerInterfaceProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/proxy-start/src/main/java/hello/proxy/config/v1_proxy/interface_proxy/OrderRepositoryInterfaceProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/proxy-start/src/main/java/hello/proxy/config/v1_proxy/interface_proxy/OrderServiceInterfaceProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/proxy-start/src/main/java/hello/proxy/config/v2_dynamicproxy/handler/LogTraceBasicHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/proxy-start/src/main/java/hello/proxy/config/v2_dynamicproxy/handler/LogTraceFilterHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/proxy-start/src/main/java/hello/proxy/config/v2_dynamicproxy/handler/LogTraceFilterInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/proxy-start/src/main/java/hello/proxy/config/v3_proxyfactory/advice/LogTraceAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/proxy-start/src/main/java/hello/proxy/config/v4_postprocessor/postprocessor/BeanPostProcessorConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/proxy-start/src/main/java/hello/proxy/config/v4_postprocessor/postprocessor/PackageLogTraceProxyPostProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/proxy-start/src/main/java/hello/proxy/config/v5_autoproxy/AutoProxyConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/proxy-start/src/main/java/hello/proxy/config/v6_aop/AopConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/proxy-start/src/main/java/hello/proxy/config/v6_aop/aspect/LogTraceAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/proxy-start/src/test/java/hello/proxy/advisor/AdvisorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/proxy-start/src/test/java/hello/proxy/advisor/MultiAdvisorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/proxy-start/src/test/java/hello/proxy/cglib/CglibTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/proxy-start/src/test/java/hello/proxy/cglib/code/TimeMethodInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/proxy-start/src/test/java/hello/proxy/common/advice/TimeAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/proxy-start/src/test/java/hello/proxy/common/service/ConcreteService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/proxy-start/src/test/java/hello/proxy/common/service/ServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/proxy-start/src/test/java/hello/proxy/common/service/ServiceInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/proxy-start/src/test/java/hello/proxy/jdkdynamic/JdkDynamicProxyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/proxy-start/src/test/java/hello/proxy/jdkdynamic/ReflectionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/proxy-start/src/test/java/hello/proxy/jdkdynamic/code/AImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/proxy-start/src/test/java/hello/proxy/jdkdynamic/code/AInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/proxy-start/src/test/java/hello/proxy/jdkdynamic/code/BImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/proxy-start/src/test/java/hello/proxy/jdkdynamic/code/BInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/proxy-start/src/test/java/hello/proxy/jdkdynamic/code/TimeInvocationHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/proxy-start/src/test/java/hello/proxy/postprocessor/BeanPostProcessorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/proxy-start/src/test/java/hello/proxy/proxyfactory/ProxyFactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/proxy-start/src/test/java/hello/proxy/pureproxy/concreteproxy/ConcreteProxyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/proxy-start/src/test/java/hello/proxy/pureproxy/concreteproxy/code/ConcreteClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/proxy-start/src/test/java/hello/proxy/pureproxy/concreteproxy/code/ConcreteLogic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/proxy-start/src/test/java/hello/proxy/pureproxy/concreteproxy/code/TimeProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/proxy-start/src/test/java/hello/proxy/pureproxy/decorator/code/Component.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/proxy-start/src/test/java/hello/proxy/pureproxy/decorator/code/Decorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/proxy-start/src/test/java/hello/proxy/pureproxy/decorator/code/DecoratorPatternClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/proxy-start/src/test/java/hello/proxy/pureproxy/decorator/code/DecoratorPatternTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/proxy-start/src/test/java/hello/proxy/pureproxy/decorator/code/MessageDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/proxy-start/src/test/java/hello/proxy/pureproxy/decorator/code/RealComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/proxy-start/src/test/java/hello/proxy/pureproxy/decorator/code/TimeDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/proxy-start/src/test/java/hello/proxy/pureproxy/proxy/ProxyPatternTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/proxy-start/src/test/java/hello/proxy/pureproxy/proxy/code/CacheProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/proxy-start/src/test/java/hello/proxy/pureproxy/proxy/code/ProxyPatternClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/proxy-start/src/test/java/hello/proxy/pureproxy/proxy/code/RealSubject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/proxy-start/src/test/java/hello/proxy/pureproxy/proxy/code/Subject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/로그/src/main/java/spring/demo/LogTraceConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/로그/src/main/java/spring/demo/app/v0/OrderControllerV0.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/로그/src/main/java/spring/demo/app/v0/OrderRepositoryV0.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/로그/src/main/java/spring/demo/app/v0/OrderServiceV0.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/로그/src/main/java/spring/demo/app/v2/OrderControllerV2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/로그/src/main/java/spring/demo/app/v2/OrderRepositoryV2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/로그/src/main/java/spring/demo/app/v2/OrderServiceV2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/로그/src/main/java/spring/demo/app/v3/OrderControllerV3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/로그/src/main/java/spring/demo/app/v3/OrderRepositoryV3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/로그/src/main/java/spring/demo/app/v3/OrderServiceV3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/로그/src/main/java/spring/demo/app/v4/OrderControllerV4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/로그/src/main/java/spring/demo/app/v4/OrderRepositoryV4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/로그/src/main/java/spring/demo/app/v4/OrderServiceV4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/로그/src/main/java/spring/demo/app/v5/OrderControllerV5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/로그/src/main/java/spring/demo/app/v5/OrderRepositoryV5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/로그/src/main/java/spring/demo/app/v5/OrderServiceV5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/로그/src/main/java/spring/demo/trace/TraceId.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/로그/src/main/java/spring/demo/trace/TraceStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/로그/src/main/java/spring/demo/trace/callback/TraceCallback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/로그/src/main/java/spring/demo/trace/callback/TraceTemplate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/로그/src/main/java/spring/demo/trace/hellotrace/HelloTraceV1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/로그/src/main/java/spring/demo/trace/hellotrace/HelloTraceV2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/로그/src/main/java/spring/demo/trace/logtrace/FieldLogTrace.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/로그/src/main/java/spring/demo/trace/logtrace/LogTrace.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/로그/src/main/java/spring/demo/trace/logtrace/ThreadLocalLogTrace.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/로그/src/main/java/spring/demo/trace/template/AbstractTemplate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/로그/src/test/java/spring/demo/trace/hellotrace/HelloTraceV1Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/로그/src/test/java/spring/demo/trace/hellotrace/HelloTraceV2Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/로그/src/test/java/spring/demo/trace/logtrace/FieldLogTraceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/로그/src/test/java/spring/demo/trace/strategy/ContextV1Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/로그/src/test/java/spring/demo/trace/strategy/ContextV2Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/로그/src/test/java/spring/demo/trace/strategy/code/strategy/ContextV1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/로그/src/test/java/spring/demo/trace/strategy/code/strategy/ContextV2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/로그/src/test/java/spring/demo/trace/strategy/code/strategy/Strategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/로그/src/test/java/spring/demo/trace/strategy/code/strategy/StrategyLogic1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/로그/src/test/java/spring/demo/trace/strategy/code/strategy/StrategyLogic2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/로그/src/test/java/spring/demo/trace/strategy/code/template/Callback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/로그/src/test/java/spring/demo/trace/strategy/code/template/TimeLogTemplate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/로그/src/test/java/spring/demo/trace/template/TemplateMethodTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/로그/src/test/java/spring/demo/trace/template/code/AbstractTemplate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/로그/src/test/java/spring/demo/trace/template/code/SubClassLogic1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/로그/src/test/java/spring/demo/trace/template/code/SubClassLogic2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/로그/src/test/java/spring/demo/trace/threadlocal/code/FieldService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/로그/src/test/java/spring/demo/trace/threadlocal/code/FieldServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/로그/src/test/java/spring/demo/trace/threadlocal/code/ThreadLocalService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../고급편/로그/src/test/java/spring/demo/trace/threadlocal/code/ThreadLocalServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../기본편/core/src/test/java/hello/core/beanfind/ApplicationContextInfoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../부트편/autoconfig/src/main/java/hello/config/DbConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../부트편/autoconfig/src/main/java/hello/config/MemoryConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../부트편/autoconfig/src/main/java/hello/member/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../부트편/autoconfig/src/main/java/hello/member/MemberRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../부트편/autoconfig/src/main/java/memory/Memory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../부트편/autoconfig/src/main/java/memory/MemoryCondition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../부트편/autoconfig/src/main/java/memory/MemoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../부트편/autoconfig/src/main/java/memory/MemoryFinder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../부트편/autoconfig/src/test/java/hello/config/DbConfigTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../부트편/autoconfig/src/test/java/hello/config/LittleTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../부트편/autoconfig/src/test/java/hello/member/MemberRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../부트편/embed/src/main/java/hello/MySpringBootAppMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../부트편/embed/src/main/java/hello/boot/MySpringApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../부트편/embed/src/main/java/hello/boot/MySpringBootApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../부트편/embed/src/main/java/hello/embed/EmbedTomcatServletMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../부트편/embed/src/main/java/hello/embed/EmbedTomcatSpringMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../부트편/external-read/src/main/java/hello/config/MyDataSourceConfigV1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../부트편/external-read/src/main/java/hello/config/MyDataSourceConfigV2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../부트편/external-read/src/main/java/hello/config/MyDataSourceConfigV3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../부트편/external-read/src/main/java/hello/config/MyDataSourceEnvConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../부트편/external-read/src/main/java/hello/config/MyDataSourceValueConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../부트편/external-read/src/main/java/hello/datasource/MyDataSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../부트편/external-read/src/main/java/hello/datasource/MyDataSourcePropertiesV1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../부트편/external-read/src/main/java/hello/datasource/MyDataSourcePropertiesV2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../부트편/external-read/src/main/java/hello/datasource/MyDataSourcePropertiesV3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../부트편/external-read/src/main/java/hello/pay/LocalPayClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../부트편/external-read/src/main/java/hello/pay/OrderRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../부트편/external-read/src/main/java/hello/pay/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../부트편/external-read/src/main/java/hello/pay/PayClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../부트편/external-read/src/main/java/hello/pay/PayConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../부트편/external-read/src/main/java/hello/pay/ProdPayClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../부트편/external/src/main/java/hello/CommandLineBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../부트편/external/src/main/java/hello/EnvironmentCheck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../부트편/external/src/main/resources/application-dev.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../부트편/external/src/main/resources/application-prod.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../부트편/external/src/test/java/hello/external/CommandLineV2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../부트편/external/src/test/java/hello/external/OsEnv.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../부트편/memory-v1/src/main/java/memory/Memory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../부트편/memory-v1/src/main/java/memory/MemoryCondition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../부트편/memory-v1/src/main/java/memory/MemoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../부트편/memory-v1/src/main/java/memory/MemoryFinder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../부트편/memory-v2/src/main/java/memory/MemoryAutoConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../부트편/memory-v2/src/main/resources/META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../부트편/project-v1/libs/memory-v1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../부트편/project-v1/src/main/java/hello/config/MemoryConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../부트편/project-v2/libs/memory-v2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../부트편/server/src/main/java/hello/container/AppInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../부트편/server/src/main/java/hello/container/AppInitV1Servlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../부트편/server/src/main/java/hello/container/AppInitV2Spring.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../부트편/server/src/main/java/hello/container/AppInitV3SpringMvc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../부트편/server/src/main/java/hello/container/MyContainerInitV1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../부트편/server/src/main/java/hello/container/MyContainerInitV2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../부트편/server/src/main/java/hello/servlet/HelloServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../부트편/server/src/main/java/hello/servlet/TestServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../부트편/server/src/main/java/hello/spring/HelloConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../부트편/server/src/main/java/hello/spring/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../부트편/server/src/main/resources/META-INF/services/jakarta.servlet.ServletContainerInitializer" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../부트편/server/src/main/webapp/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DB1/src/main/java/hello/jdbc/connection/DBConnectionUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DB1/src/main/java/hello/jdbc/connection/DBConnectionUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DB1/src/main/java/hello/jdbc/repository/MemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DB1/src/main/java/hello/jdbc/repository/MemberRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DB1/src/main/java/hello/jdbc/repository/MemberRepositoryV3.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DB1/src/main/java/hello/jdbc/repository/MemberRepositoryV3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DB1/src/main/java/hello/jdbc/repository/MemberRepositoryV4_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DB1/src/main/java/hello/jdbc/repository/MemberRepositoryV4_2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DB1/src/main/java/hello/jdbc/service/MemberServiceV1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DB1/src/main/java/hello/jdbc/service/MemberServiceV1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DB1/src/main/java/hello/jdbc/service/MemberServiceV2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DB1/src/main/java/hello/jdbc/service/MemberServiceV2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DB1/src/main/java/hello/jdbc/service/MemberServiceV3_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DB1/src/main/java/hello/jdbc/service/MemberServiceV3_2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DB1/src/main/java/hello/jdbc/service/MemberServiceV3_3.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DB1/src/main/java/hello/jdbc/service/MemberServiceV3_3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DB1/src/main/java/hello/jdbc/service/MemberServiceV4.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DB1/src/main/java/hello/jdbc/service/MemberServiceV4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DB1/src/test/java/hello/jdbc/connection/ConnectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DB1/src/test/java/hello/jdbc/connection/ConnectionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DB2ItemService/src/main/java/hello/itemservice/ItemServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DB2ItemService/src/main/java/hello/itemservice/ItemServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DB2ItemService/src/main/java/hello/itemservice/TestDataInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DB2ItemService/src/main/java/hello/itemservice/TestDataInit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DB2ItemService/src/main/java/hello/itemservice/repository/ItemRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DB2ItemService/src/main/java/hello/itemservice/repository/ItemRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DB2ItemService/src/main/java/hello/itemservice/repository/ItemUpdateDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DB2ItemService/src/main/java/hello/itemservice/repository/ItemUpdateDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DB2ItemService/src/main/java/hello/itemservice/repository/JdbcTemplateItemRepositoryV1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DB2ItemService/src/main/java/hello/itemservice/repository/JdbcTemplateItemRepositoryV1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DB2ItemService/src/main/java/hello/itemservice/repository/JdbcTemplateItemRepositoryV2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DB2ItemService/src/main/java/hello/itemservice/repository/JdbcTemplateItemRepositoryV2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DB2ItemService/src/main/java/hello/itemservice/repository/JdbcTemplateItemRepositoryV3.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DB2ItemService/src/main/java/hello/itemservice/repository/JdbcTemplateItemRepositoryV3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DB2ItemService/src/main/java/hello/itemservice/repository/JpaItemRepositoryV1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DB2ItemService/src/main/java/hello/itemservice/repository/JpaItemRepositoryV1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DB2ItemService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../DB2ItemService/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DB2ItemService/src/test/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../DB2ItemService/src/test/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DB2프록시/.gradle/7.6.1/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../DB2프록시/.gradle/7.6.1/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DB2프록시/.gradle/7.6.1/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../DB2프록시/.gradle/7.6.1/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DB2프록시/.gradle/7.6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../DB2프록시/.gradle/7.6.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DB2프록시/.gradle/7.6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../DB2프록시/.gradle/7.6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DB2프록시/.gradle/7.6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../DB2프록시/.gradle/7.6.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DB2프록시/.gradle/7.6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../DB2프록시/.gradle/7.6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DB2프록시/.gradle/7.6.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../DB2프록시/.gradle/7.6.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DB2프록시/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../DB2프록시/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DB2프록시/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/../../DB2프록시/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DB2프록시/build/classes/java/main/hello/springtx/propagation/LogRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../DB2프록시/build/classes/java/main/hello/springtx/propagation/LogRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DB2프록시/build/classes/java/test/hello/springtx/apply/TxBasicTest$BasicService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../DB2프록시/build/classes/java/test/hello/springtx/apply/TxBasicTest$BasicService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DB2프록시/build/classes/java/test/hello/springtx/apply/TxBasicTest$TxApplyBasicConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../DB2프록시/build/classes/java/test/hello/springtx/apply/TxBasicTest$TxApplyBasicConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DB2프록시/build/classes/java/test/hello/springtx/apply/TxBasicTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../DB2프록시/build/classes/java/test/hello/springtx/apply/TxBasicTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DB2프록시/build/classes/java/test/hello/springtx/propagation/BasicTxTest$Config.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../DB2프록시/build/classes/java/test/hello/springtx/propagation/BasicTxTest$Config.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DB2프록시/build/classes/java/test/hello/springtx/propagation/BasicTxTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../DB2프록시/build/classes/java/test/hello/springtx/propagation/BasicTxTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DB2프록시/build/classes/java/test/hello/springtx/propagation/MemberServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../DB2프록시/build/classes/java/test/hello/springtx/propagation/MemberServiceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DB2프록시/build/reports/tests/test/classes/hello.springtx.propagation.MemberServiceTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../DB2프록시/build/reports/tests/test/classes/hello.springtx.propagation.MemberServiceTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DB2프록시/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../DB2프록시/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DB2프록시/build/reports/tests/test/packages/hello.springtx.propagation.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../DB2프록시/build/reports/tests/test/packages/hello.springtx.propagation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DB2프록시/build/test-results/test/TEST-hello.springtx.propagation.MemberServiceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../DB2프록시/build/test-results/test/TEST-hello.springtx.propagation.MemberServiceTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DB2프록시/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../DB2프록시/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DB2프록시/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/../../DB2프록시/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DB2프록시/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../DB2프록시/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DB2프록시/build/tmp/compileJava/compileTransaction/stash-dir/LogRepository.class.uniqueId0" beforeDir="false" afterPath="$PROJECT_DIR$/../../DB2프록시/build/tmp/compileJava/compileTransaction/stash-dir/LogRepository.class.uniqueId0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DB2프록시/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../DB2프록시/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DB2프록시/build/tmp/compileTestJava/compileTransaction/stash-dir/MemberServiceTest.class.uniqueId0" beforeDir="false" afterPath="$PROJECT_DIR$/../../DB2프록시/build/tmp/compileTestJava/compileTransaction/stash-dir/MemberServiceTest.class.uniqueId0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DB2프록시/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../DB2프록시/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DB2프록시/src/main/java/hello/springtx/propagation/Log.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DB2프록시/src/main/java/hello/springtx/propagation/Log.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DB2프록시/src/main/java/hello/springtx/propagation/LogRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DB2프록시/src/main/java/hello/springtx/propagation/LogRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DB2프록시/src/main/java/hello/springtx/propagation/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DB2프록시/src/main/java/hello/springtx/propagation/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DB2프록시/src/test/java/hello/springtx/apply/TxBasicTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DB2프록시/src/test/java/hello/springtx/apply/TxBasicTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DB2프록시/src/test/java/hello/springtx/propagation/BasicTxTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DB2프록시/src/test/java/hello/springtx/propagation/BasicTxTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DB2프록시/src/test/java/hello/springtx/propagation/MemberServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DB2프록시/src/test/java/hello/springtx/propagation/MemberServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MVC1다양한기능/.gradle/7.6/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../MVC1다양한기능/.gradle/7.6/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MVC1다양한기능/.gradle/7.6/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../MVC1다양한기능/.gradle/7.6/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MVC1다양한기능/.gradle/7.6/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../MVC1다양한기능/.gradle/7.6/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MVC1다양한기능/.gradle/7.6/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../MVC1다양한기능/.gradle/7.6/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MVC1다양한기능/.gradle/7.6/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../MVC1다양한기능/.gradle/7.6/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MVC1다양한기능/.gradle/7.6/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../MVC1다양한기능/.gradle/7.6/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MVC1다양한기능/.gradle/7.6/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../MVC1다양한기능/.gradle/7.6/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MVC1다양한기능/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../MVC1다양한기능/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MVC1다양한기능/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../MVC1다양한기능/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MVC1다양한기능/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/../../MVC1다양한기능/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MVC1다양한기능/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../MVC1다양한기능/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MVC1다양한기능/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../MVC1다양한기능/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MVC1다양한기능/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../MVC1다양한기능/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MVC1다양한기능/build/classes/java/main/hello/demo/controller/RequestBodyJsonController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../MVC1다양한기능/build/classes/java/main/hello/demo/controller/RequestBodyJsonController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MVC1다양한기능/build/classes/java/main/hello/demo/controller/RequestBodyStringController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../MVC1다양한기능/build/classes/java/main/hello/demo/controller/RequestBodyStringController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MVC1다양한기능/build/classes/java/main/hello/demo/controller/ResponseViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../MVC1다양한기능/build/classes/java/main/hello/demo/controller/ResponseViewController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MVC1다양한기능/build/classes/java/main/hello/demo/domain/HelloData.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../MVC1다양한기능/build/classes/java/main/hello/demo/domain/HelloData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MVC1다양한기능/build/tmp/compileJava/compileTransaction/stash-dir/ResponseViewController.class.uniqueId0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MVC1다양한기능/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../MVC1다양한기능/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MVC1다양한기능/src/main/java/hello/demo/controller/RequestBodyJsonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../MVC1다양한기능/src/main/java/hello/demo/controller/RequestBodyJsonController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MVC1다양한기능/src/main/java/hello/demo/controller/RequestBodyStringController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../MVC1다양한기능/src/main/java/hello/demo/controller/RequestBodyStringController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MVC1다양한기능/src/main/java/hello/demo/domain/HelloData.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../MVC1다양한기능/src/main/java/hello/demo/domain/HelloData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MVC1서블릿/.gradle/7.6/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../MVC1서블릿/.gradle/7.6/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MVC1서블릿/.gradle/7.6/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../MVC1서블릿/.gradle/7.6/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MVC1서블릿/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../MVC1서블릿/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MVC1서블릿/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../MVC1서블릿/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MVC1서블릿/src/main/java/hello/demo/servlet/FormDataServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../MVC1서블릿/src/main/java/hello/demo/servlet/FormDataServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MVC1서블릿/src/main/java/hello/demo/servlet/HelloServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../MVC1서블릿/src/main/java/hello/demo/servlet/HelloServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MVC1서블릿/src/main/java/hello/demo/servlet/RequestBodyStringServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../MVC1서블릿/src/main/java/hello/demo/servlet/RequestBodyStringServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MVC1서블릿/src/main/java/hello/demo/servlet/RequestParamServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../MVC1서블릿/src/main/java/hello/demo/servlet/RequestParamServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MVC1서블릿/src/main/java/hello/demo/web/frontcontroller/v5/FrontControllerV5.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../MVC1서블릿/src/main/java/hello/demo/web/frontcontroller/v5/FrontControllerV5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MVC2exception/src/main/java/hello/demo/exception/APIExceptionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../MVC2exception/src/main/java/hello/demo/exception/APIExceptionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MVC2exception/src/main/java/hello/demo/exception/ExceptionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../MVC2exception/src/main/java/hello/demo/exception/ExceptionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MVC2exception/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../MVC2exception/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MVC2exception/src/main/resources/templates/error-page/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../MVC2exception/src/main/resources/templates/error/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MVC2exception/src/main/resources/templates/error-page/500.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../MVC2exception/src/main/resources/templates/error/500.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MVC2form/src/main/resources/templates/form/addForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../MVC2form/src/main/resources/templates/form/addForm.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MVC2form/src/main/resources/templates/form/editForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../MVC2form/src/main/resources/templates/form/editForm.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MVC2login/src/main/java/hello/login/web/login/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../MVC2login/src/main/java/hello/login/web/login/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MVC2validation/src/main/java/hello/itemservice/web/validation/ValidationItemControllerV2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../MVC2validation/src/main/java/hello/itemservice/web/validation/ValidationItemControllerV2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MVC2템플릿 엔진/.gradle/7.6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../MVC2템플릿 엔진/.gradle/7.6.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MVC2템플릿 엔진/.gradle/7.6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../MVC2템플릿 엔진/.gradle/7.6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MVC2템플릿 엔진/.gradle/7.6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../MVC2템플릿 엔진/.gradle/7.6.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MVC2템플릿 엔진/.gradle/7.6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../MVC2템플릿 엔진/.gradle/7.6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MVC2템플릿 엔진/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../MVC2템플릿 엔진/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MVC2템플릿 엔진/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/../../MVC2템플릿 엔진/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MVC2템플릿 엔진/build/resources/main/templates/basic/attribute.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../MVC2템플릿 엔진/build/resources/main/templates/basic/attribute.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MVC2템플릿 엔진/build/resources/main/templates/basic/block.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../MVC2템플릿 엔진/build/resources/main/templates/basic/block.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MVC2템플릿 엔진/build/resources/main/templates/basic/comment.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../MVC2템플릿 엔진/build/resources/main/templates/basic/comment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MVC2템플릿 엔진/build/resources/main/templates/basic/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../MVC2템플릿 엔진/build/resources/main/templates/basic/layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MVC2템플릿 엔진/build/resources/main/templates/basic/link.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../MVC2템플릿 엔진/build/resources/main/templates/basic/link.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MVC2템플릿 엔진/build/resources/main/templates/basic/repetition.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../MVC2템플릿 엔진/build/resources/main/templates/basic/repetition.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MVC2템플릿 엔진/build/resources/main/templates/basic/text-unescaped.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../MVC2템플릿 엔진/build/resources/main/templates/basic/text-unescaped.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MVC2템플릿 엔진/src/main/resources/templates/basic/attribute.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../MVC2템플릿 엔진/src/main/resources/templates/basic/attribute.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MVC2템플릿 엔진/src/main/resources/templates/basic/block.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../MVC2템플릿 엔진/src/main/resources/templates/basic/block.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MVC2템플릿 엔진/src/main/resources/templates/basic/comment.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../MVC2템플릿 엔진/src/main/resources/templates/basic/comment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MVC2템플릿 엔진/src/main/resources/templates/basic/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../MVC2템플릿 엔진/src/main/resources/templates/basic/layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MVC2템플릿 엔진/src/main/resources/templates/basic/link.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../MVC2템플릿 엔진/src/main/resources/templates/basic/link.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MVC2템플릿 엔진/src/main/resources/templates/basic/repetition.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../MVC2템플릿 엔진/src/main/resources/templates/basic/repetition.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MVC2템플릿 엔진/src/main/resources/templates/basic/text-unescaped.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../MVC2템플릿 엔진/src/main/resources/templates/basic/text-unescaped.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../기본편/DIP,OCP/.gradle/7.6/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../기본편/DIP,OCP/.gradle/7.6/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../기본편/DIP,OCP/.gradle/7.6/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../기본편/DIP,OCP/.gradle/7.6/checksums/sha1-checksums.bin" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2U9cPNy32QnWnpMzlBLSgBNp59W" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/woo/Desktop/code/StudySpring/Spring Security/project",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors",
+    "spring.configuration.checksum": "23ff5e1ed443861eaca377495be7b2ec",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="ProjectApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="project.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="hello.project.ProjectApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="620e4acb-3b2b-4fb3-9d76-f95626d62fb7" name="Changes" comment="" />
+      <created>1692355211811</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1692355211811</updated>
+      <workItem from="1692355212948" duration="2454000" />
+      <workItem from="1692357724414" duration="1104000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

@@ -21,7 +21,7 @@ public class MemberServiceV2 {
             con.setAutoCommit(false); //autocommit을 해제함
             bizLogic(con,fromId,toId,money);
             con.commit();
-        }catch(Exception e){
+        }catch(Exception e){ //예외시 롤백해버림
             con.rollback();
             throw new IllegalStateException(e);
         }finally {

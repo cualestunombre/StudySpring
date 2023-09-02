@@ -76,7 +76,9 @@ public class MemberRepositoryV4_2 implements MemberRepository{
             pstmt.setInt(1,money);
             pstmt.executeUpdate();
         }catch (SQLException e){
+
             throw exceptionTranslator.translate("update",sql,e);
+
         }finally {
             close(con,pstmt,null);
         }

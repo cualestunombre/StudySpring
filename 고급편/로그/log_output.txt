@@ -1,0 +1,132 @@
+[da7964f0] OrderController.request()
+[da7964f0] |-->OrderService.orderItem()
+[da7964f0] |  |-->OrderRepository.save()
+[da7964f0] |  |<--OrderRepository.save()times=0ms ex=java.lang.NullPointerException
+[da7964f0] |<--OrderService.orderItem()times=9ms ex=java.lang.NullPointerException
+[da7964f0] OrderController.request()times=13ms ex=java.lang.NullPointerException
+[bd4a968b] OrderController.request()
+[bd4a968b] |-->OrderService.orderItem()
+[bd4a968b] |  |-->OrderRepository.save()
+[bd4a968b] |  |<--OrderRepository.save()times=1001ms
+[bd4a968b] |<--OrderService.orderItem()times=1005ms
+[bd4a968b] OrderController.request()times=1006ms
+[f3621b06] OrderController.request()
+[f3621b06] |-->OrderService.orderItem()
+[f3621b06] |  |-->OrderRepository.save()
+[f3621b06] |  |<--OrderRepository.save()times=1003ms
+[f3621b06] |<--OrderService.orderItem()times=1003ms
+[f3621b06] OrderController.request()times=1003ms
+[a2e3102b] OrderController.request()
+[a2e3102b] |-->OrderService.orderItem()
+[a2e3102b] |  |-->OrderRepository.save()
+[a2e3102b] |  |<--OrderRepository.save()times=1005ms
+[a2e3102b] |<--OrderService.orderItem()times=1005ms
+[a2e3102b] OrderController.request()times=1005ms
+[6c4cb45a] OrderController.request()
+[6c4cb45a] |-->OrderService.orderItem()
+[6c4cb45a] |  |-->OrderRepository.save()
+[6c4cb45a] |  |<--OrderRepository.save()times=1002ms
+[6c4cb45a] |<--OrderService.orderItem()times=1002ms
+[6c4cb45a] OrderController.request()times=1002ms
+[e6895c98] OrderController.request()
+[e6895c98] |-->OrderService.orderItem()
+[e6895c98] |  |-->OrderRepository.save()
+[e6895c98] |  |<--OrderRepository.save()times=1005ms
+[e6895c98] |<--OrderService.orderItem()times=1005ms
+[e6895c98] OrderController.request()times=1005ms
+[d0af39a7] OrderController.request()
+[d0af39a7] |-->OrderService.orderItem()
+[d0af39a7] |  |-->OrderRepository.save()
+[d0af39a7] |  |<--OrderRepository.save()times=1005ms
+[d0af39a7] |<--OrderService.orderItem()times=1005ms
+[d0af39a7] OrderController.request()times=1005ms
+[e91efdbb] OrderController.request()
+[e91efdbb] |-->OrderService.orderItem()
+[e91efdbb] |  |-->OrderRepository.save()
+[e91efdbb] |  |<--OrderRepository.save()times=1000ms
+[e91efdbb] |<--OrderService.orderItem()times=1001ms
+[e91efdbb] OrderController.request()times=1001ms
+[0ca207ac] OrderController.request()
+[0ca207ac] |-->OrderService.orderItem()
+[0ca207ac] |  |-->OrderRepository.save()
+[0ca207ac] |  |<--OrderRepository.save()times=1005ms
+[0ca207ac] |<--OrderService.orderItem()times=1005ms
+[0ca207ac] OrderController.request()times=1005ms
+[869ac455] OrderController.request()
+[869ac455] |-->OrderService.orderItem()
+[869ac455] |  |-->OrderRepository.save()
+[869ac455] |  |<--OrderRepository.save()times=1001ms
+[869ac455] |<--OrderService.orderItem()times=1001ms
+[869ac455] OrderController.request()times=1001ms
+[da7964f0] OrderController.request()
+[da7964f0] |-->OrderService.orderItem()
+[da7964f0] |  |-->OrderRepository.save()
+[da7964f0] |  |<--OrderRepository.save()times=0ms ex=java.lang.NullPointerException
+[da7964f0] |<--OrderService.orderItem()times=9ms ex=java.lang.NullPointerException
+[da7964f0] OrderController.request()times=13ms ex=java.lang.NullPointerException
+[b35ae982] OrderController.request()
+[b35ae982] |-->OrderService.orderItem()
+[b35ae982] |  |-->OrderRepository.save()
+[b35ae982] |  |<--OrderRepository.save()times=1002ms
+[b35ae982] |<--OrderService.orderItem()times=1002ms
+[b35ae982] OrderController.request()times=1002ms
+[bd4a968b] OrderController.request()
+[bd4a968b] |-->OrderService.orderItem()
+[bd4a968b] |  |-->OrderRepository.save()
+[bd4a968b] |  |<--OrderRepository.save()times=1001ms
+[bd4a968b] |<--OrderService.orderItem()times=1005ms
+[bd4a968b] OrderController.request()times=1006ms
+[f6af9023] OrderController.request()
+[f6af9023] |-->OrderService.orderItem()
+[f6af9023] |  |-->OrderRepository.save()
+[f6af9023] |  |<--OrderRepository.save()times=1005ms
+[f6af9023] |<--OrderService.orderItem()times=1005ms
+[f6af9023] OrderController.request()times=1005ms
+[f3621b06] OrderController.request()
+[f3621b06] |-->OrderService.orderItem()
+[f3621b06] |  |-->OrderRepository.save()
+[f3621b06] |  |<--OrderRepository.save()times=1003ms
+[f3621b06] |<--OrderService.orderItem()times=1003ms
+[f3621b06] OrderController.request()times=1003ms
+[34148409] OrderController.request()
+[34148409] |-->OrderService.orderItem()
+[34148409] |  |-->OrderRepository.save()
+[34148409] |  |<--OrderRepository.save()times=1005ms
+[34148409] |<--OrderService.orderItem()times=1006ms
+[34148409] OrderController.request()times=1006ms
+[a2e3102b] OrderController.request()
+[a2e3102b] |-->OrderService.orderItem()
+[a2e3102b] |  |-->OrderRepository.save()
+[a2e3102b] |  |<--OrderRepository.save()times=1005ms
+[a2e3102b] |<--OrderService.orderItem()times=1005ms
+[a2e3102b] OrderController.request()times=1005ms
+[1fd980a6] OrderController.request()
+[1fd980a6] |-->OrderService.orderItem()
+[1fd980a6] |  |-->OrderRepository.save()
+[1fd980a6] |  |<--OrderRepository.save()times=1005ms
+[1fd980a6] |<--OrderService.orderItem()times=1005ms
+[1fd980a6] OrderController.request()times=1005ms
+[6c4cb45a] OrderController.request()
+[6c4cb45a] |-->OrderService.orderItem()
+[6c4cb45a] |  |-->OrderRepository.save()
+[6c4cb45a] |  |<--OrderRepository.save()times=1002ms
+[6c4cb45a] |<--OrderService.orderItem()times=1002ms
+[6c4cb45a] OrderController.request()times=1002ms
+[106e1319] OrderController.request()
+[106e1319] |-->OrderService.orderItem()
+[106e1319] |  |-->OrderRepository.save()
+[106e1319] |  |<--OrderRepository.save()times=1001ms
+[106e1319] |<--OrderService.orderItem()times=1001ms
+[106e1319] OrderController.request()times=1001ms
+[e6895c98] OrderController.request()
+[e6895c98] |-->OrderService.orderItem()
+[e6895c98] |  |-->OrderRepository.save()
+[e6895c98] |  |<--OrderRepository.save()times=1005ms
+[e6895c98] |<--OrderService.orderItem()times=1005ms
+[e6895c98] OrderController.request()times=1005ms
+[f639fe4e] OrderController.request()
+[f639fe4e] |-->OrderService.orderItem()
+[f639fe4e] |  |-->OrderRepository.save()
+[f639fe4e] |  |<--OrderRepository.save()times=1004ms
+[f639fe4e] |<--OrderService.orderItem()times=1004ms
+[f639fe4e] OrderController.request()times=1005ms

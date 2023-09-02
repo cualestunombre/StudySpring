@@ -5,8 +5,8 @@
     <title>Title</title>
 </head>
 <body>
-  <li><a th:href="@{./hello/{data}(data=${link1},link2=${link2})}">뭐야</a></li>
-  <div>주소 값 표현 [[|'@{./hello}' ㅋㅋㅋㅋ|]]</div>
+  <li><a th:href="|@{./hello/{data}(data=${link1},link2=${link2})}/hello|">뭐야</a></li>
+  <div>주소 값 표현 [[|@{./hello} ㅋㅋㅋㅋ|]]</div>
 
 </body>
 </html>

@@ -104,7 +104,7 @@ public class MemberRepositoryV3 {
 
     }
     private Connection getConnection() throws SQLException{
-        Connection con = DataSourceUtils.getConnection(dataSource);
+        Connection con = DataSourceUtils.getConnection(dataSource); //동기화 매니져가 보관하는 트랜잭션이 있으면 가져옴
         log.info("get connection={} class={}",con,con.getClass());
         return con;
     }

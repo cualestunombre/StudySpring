@@ -15,7 +15,7 @@ public class Member {
     @GeneratedValue
     private Long id;
     private String username;
-    public Member(){}
+    public Member(){}//JPA는 기본 생성자 필수
 
     public Member(String username){
         this.username = username;

@@ -13,6 +13,7 @@ import org.springframework.transaction.TransactionDefinition;
 import org.springframework.transaction.TransactionStatus;
 import org.springframework.transaction.UnexpectedRollbackException;
 import org.springframework.transaction.interceptor.DefaultTransactionAttribute;
+import org.springframework.transaction.support.DefaultTransactionDefinition;
 
 import javax.sql.DataSource;
 
@@ -23,10 +24,13 @@ public class BasicTxTest {
     @Autowired
     PlatformTransactionManager txManager;
 
+
     @TestConfiguration
     static class Config{
+        @Autowired
+        DataSource dataSource;
         @Bean
-        public PlatformTransactionManager transactionManager(DataSource dataSource){ //기본적으로 넣어준다 dataSource
+        public PlatformTransactionManager transactionManager(){ //기본적으로 넣어준다 dataSource
             return new DataSourceTransactionManager(dataSource);
         }
 
@@ -156,6 +160,27 @@ public class BasicTxTest {
 
         log.info("외부 트랜잭션 롤백");
         txManager.rollback(outer); ;
+    }
+    @Test
+    void inner_inner(){
+        log.info("외부 트랜잭션 start!!!!");
+        TransactionStatus outer = txManager.getTransaction(new DefaultTransactionDefinition());
+        log.info("outer.isNewTransaction()={}",outer.isNewTransaction());
+        log.info("내부 트랜잭션 시작");
+        DefaultTransactionAttribute definition = new DefaultTransactionAttribute();
+        definition.setPropagationBehavior(TransactionDefinition.PROPAGATION_REQUIRES_NEW);
+        TransactionStatus inner = txManager.getTransaction(definition);
+        log.info("inner.isNewTransaction()={}",inner.isNewTransaction());
+        log.info("내부 내부 트랜잭션 시작");
+        DefaultTransactionAttribute definition2 = new DefaultTransactionAttribute();
+        TransactionStatus innerinner = txManager.getTransaction(definition2);
+        log.info("inner.isNewTransaction()={}",innerinner.isNewTransaction());
+        log.info("내부 내부 트랜잭션 롤백");
+        txManager.rollback(innerinner);
+        log.info("내부 트랜잭션 커밋");
+        assertThatThrownBy(()->txManager.commit(inner)).isInstanceOf(UnexpectedRollbackException.class);
+        log.info("외부 트랜잭션 커밋");
+        txManager.commit(outer);
     }
 
 

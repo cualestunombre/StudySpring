@@ -25,6 +25,9 @@ public class APIExceptionController {
         if(id.equals("user-ex")){
             throw new UserException("사용자 오류");
         }
+        if(id.equals("error")){
+            res.sendError(404,"404에러 발생");
+        }
             return new MemberDto(id,"hello"+id);
     }
     @Data

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Hello world!!
+<form th:if="${isLoggedIn == true}"action="/logout" method="post">
+    <button>로그아웃</button>
+    <input type="hidden" th:value="${_csrf.getToken()}" th:name="${_csrf.parameterName}">
+
+</form>
+<form th:if="${isLoggedIn == false}" action="/login" method="post">
+    <div th:if="${error == 'wrong'}">패스워드 확인 바람</div>
+    <div th:if="${error == 'other'}">타인의 로그인 시도로 로그인 풀림</div>
+    <div th:if="${error == 'auth'}">로그인 해야 함</div>
+    <input name="username" type="text" >
+    <input name="password" type="password" >
+    <input type="checkbox" name="remember" />
+    <button type="submit">제출</button>
+    <input type="hidden" th:value="${_csrf.getToken()}" th:name="${_csrf.parameterName}">
+
+</form>
+</body>
+</html>

@@ -30,7 +30,7 @@ public class MemberServiceTest {
         memberService.joinV1(username);
 
         Assertions.assertTrue(memberRepository.find(username).isPresent());
-        Assertions.assertTrue(memberRepository.find(username).isPresent());
+        Assertions.assertTrue(logRepository.find(username).isPresent());
     }
 //    @Test
     void outerTxOff_faile(){
@@ -112,6 +112,18 @@ public class MemberServiceTest {
 
         Assertions.assertTrue(memberRepository.find(username).isPresent());
         Assertions.assertTrue(logRepository.find(username).isEmpty());
+    }
+
+    //반대로 생각해보자 만약 require_new를 해서 내부를 롤백 시켜도 예외가 처리되지 않으면 외부도 롤백이 발생할 것이다
+    @Test
+    void myCase(){
+        String username ="로그예외_myCase";
+        assertThatThrownBy(()->memberService.joinV1(username)).isInstanceOf(RuntimeException.class);
+
+        Assertions.assertTrue(memberRepository.find(username).isEmpty());
+        Assertions.assertTrue(logRepository.find(username).isEmpty());
+
+
     }
 
 

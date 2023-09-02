@@ -16,7 +16,7 @@ public class Log {
     private Long id;
     private String message;
 
-    public Log(){
+    public Log(){// JPA는 기본 생성자 필수 
 
     }
 

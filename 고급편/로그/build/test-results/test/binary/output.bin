@@ -1,0 +1,4 @@
+v21:22:33.746 [Test worker] INFO spring.demo.trace.strategy.code.strategy.StrategyLogic1 - 비지니스 로직1 실행
+b21:22:33.747 [Test worker] INFO spring.demo.trace.strategy.code.strategy.ContextV2 - resultTime=2
+v21:22:33.748 [Test worker] INFO spring.demo.trace.strategy.code.strategy.StrategyLogic2 - 비지니스 로직2 실행
+b21:22:33.748 [Test worker] INFO spring.demo.trace.strategy.code.strategy.ContextV2 - resultTime=0

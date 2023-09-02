@@ -10,7 +10,7 @@ import java.sql.SQLException;
 
 @Slf4j
 public class MemberServiceV3_2 {
-    private final TransactionTemplate txTemplate;
+    private final TransactionTemplate txTemplate; // 트랜잭션 매니져를 갖고 있음
     private final MemberRepositoryV3 memberRepository;
 
     public MemberServiceV3_2(PlatformTransactionManager transactionManager, MemberRepositoryV3 memberRepository){
@@ -23,7 +23,7 @@ public class MemberServiceV3_2 {
             try{
                 bizLogic(fromId,toId,money);
             }catch(SQLException e){ //체크 예외는 롤백 없이 커밋한다, 언체크 예외만 롤백 한다
-                throw new IllegalStateException(e); //언체크 예외
+                throw new IllegalStateException(e); //언체크 예외(런타임 예외)
             }
         });
     }

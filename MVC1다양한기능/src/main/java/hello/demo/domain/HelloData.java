@@ -7,5 +7,5 @@ import lombok.Setter;
 @Setter
 public class HelloData {
     private int age;
-    private String name;
+    private String username;
 }

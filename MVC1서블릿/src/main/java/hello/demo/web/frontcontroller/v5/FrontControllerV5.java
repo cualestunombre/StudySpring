@@ -50,7 +50,7 @@ public class FrontControllerV5 extends HttpServlet {
     protected void service(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
         initHandlerAdapters();
         initHandlerMappingMap();
-        Object handler = getHandler(req);
+        Object handler = getHandler(req); // spring에는 getHandle하면 handlerList가 있는데, 거기서 매핑함
         if (handler==null){
             res.setStatus(404);
             return;

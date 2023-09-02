@@ -21,7 +21,7 @@ import java.util.Optional;
 @Slf4j
 public class JdbcTemplateItemRepositoryV1 implements ItemRepository{
     private final JdbcTemplate template;
-
+    //기본적으로 dataSource는 설정이 없으면 스프링이 자동으로 주입한다
     public JdbcTemplateItemRepositoryV1(DataSource dataSource){
         this.template = new JdbcTemplate(dataSource);
     }
@@ -55,12 +55,12 @@ public class JdbcTemplateItemRepositoryV1 implements ItemRepository{
     }
     @Override
     public Optional<Item> findById(Long id){
-        String sql = "select id, item_name, price, quantity from item where id=?";
-        try{
-            Item item = template.queryForObject(sql,itemRowMapper(),id); //결과로우가 하나일 때 사용함
-            //결과가 없거나 둘 이상이면 예외가 발생한다
-            return Optional.of(item);
-        }catch(EmptyResultDataAccessException e){
+            String sql = "select id, item_name, price, quantity from item where id=?";
+            try{
+                Item item = template.queryForObject(sql,itemRowMapper(),id); //결과로우가 하나일 때 사용함
+                //결과가 없거나 둘 이상이면 예외가 발생한다
+                return Optional.of(item);
+            }catch(EmptyResultDataAccessException e){
             return Optional.empty();
         }
     }
@@ -104,5 +104,11 @@ public class JdbcTemplateItemRepositoryV1 implements ItemRepository{
           return item;
         };
     }
+
+    /*
+    원시값을 쿼리하고 싶으면
+    template.query(sql,Integer.class,인수);를 하면 된다
+
+     */
 
 }

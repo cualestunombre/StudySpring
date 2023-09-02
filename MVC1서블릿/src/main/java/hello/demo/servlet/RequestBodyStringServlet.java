@@ -17,6 +17,7 @@ public class RequestBodyStringServlet extends HttpServlet {
     protected void service(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
         ServletInputStream inputStream = req.getInputStream();
         String messageBody = StreamUtils.copyToString(inputStream, StandardCharsets.UTF_8);
+        // 바이트 단위 데이터로 오기 때문에 반드시 UTF8로 변환해 줘야 한다.
         System.out.println(messageBody);
     }
 

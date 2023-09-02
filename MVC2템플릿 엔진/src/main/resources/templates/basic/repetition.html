@@ -7,7 +7,7 @@
 <body>
   <tr th:each="user,userStat : ${list}">
     <td>[[|${user.name} ${user.age}      |]]     ㅋ ㅋ ㅋ ㅋ ㅋ</td>
-      <td>[[${userStat.current}]]</td>
+      <td>[[${userStat.count}]]</td>
   </tr>
 <div th:with="list=${list}" th:each="component : *{list}" >
     [[|${component.age} ${component.name}|]]

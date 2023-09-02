@@ -15,6 +15,7 @@ import java.util.Optional;
 public class LogRepository {
     private final EntityManager em;
 
+    // 새 트랜잭션 --> 독립적이다
     @Transactional(propagation = Propagation.REQUIRES_NEW)
     public void save(Log message){
         log.info("log 저장");

@@ -16,6 +16,7 @@ public class HelloServlet extends HttpServlet {
         res.setContentType("text/plain");
         res.setCharacterEncoding("utf-8");
         res.getWriter().write("hello"+username);
+        // 이렇듯 전송하는 파일의 타입을 적어줘야 한다
     }
 
 }
