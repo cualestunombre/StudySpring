@@ -6,9 +6,7 @@ import jakarta.persistence.*;
 import lombok.*;
 
 import java.io.Serializable;
-import java.util.HashSet;
-import java.util.LinkedHashSet;
-import java.util.Set;
+import java.util.*;
 
 @Entity
 @Table(name = "ROLE")
@@ -22,7 +20,7 @@ import java.util.Set;
 public class Role implements Serializable {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "role_id")
     private Long id;
 
@@ -34,11 +32,19 @@ public class Role implements Serializable {
     private String roleDesc;
 
     @ManyToMany(fetch = FetchType.LAZY, mappedBy = "roleSet")
-    @OrderBy("id desc")
+    @OrderBy("orderNum asc")
     private Set<Resources> resourcesSet = new LinkedHashSet<>();
 
     @ManyToMany(fetch = FetchType.LAZY, mappedBy = "userRoles")
     private Set<Account> accounts = new HashSet<>();
+
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn
+    private Role parentRole;
+
+    @OneToMany(fetch = FetchType.EAGER,mappedBy = "parentRole")
+    private List<Role> childRoles = new ArrayList<>();
+
 
     static public Role createRole(RoleDto roleDto){
         Role role = new Role();

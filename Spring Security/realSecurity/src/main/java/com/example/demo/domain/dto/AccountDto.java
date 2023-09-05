@@ -1,9 +1,11 @@
 package com.example.demo.domain.dto;
 
 import com.example.demo.domain.entity.Account;
+import com.example.demo.domain.entity.Role;
 import lombok.Data;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Data
 public class AccountDto {
@@ -17,6 +19,7 @@ public class AccountDto {
 
     static public AccountDto createAccountDto(Account account){
         AccountDto accountDto = new AccountDto();
+        accountDto.setRoles(account.getUserRoles().stream().map(Role::getRoleName).collect(Collectors.toList()));
         accountDto.setId(accountDto.getId());
         accountDto.setAge(account.getAge());
         accountDto.setPassword(account.getPassword());

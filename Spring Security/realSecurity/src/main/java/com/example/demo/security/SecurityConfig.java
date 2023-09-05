@@ -1,11 +1,13 @@
 package com.example.demo.security;
 
+import com.example.demo.security.filter.TerminalAuthorizationFilter;
 import com.example.demo.domain.dto.SimpleJsonResponse;
-import com.example.demo.repository.UserRepository;
 import com.example.demo.security.handler.CustomAuthenticationFailureHandler;
 import com.example.demo.security.handler.CustomAuthenticationSuccessHandler;
 import com.example.demo.security.provider.AjaxAuthenticationProvider;
 import com.example.demo.security.provider.CustomAuthenticationProvider;
+import com.example.demo.service.ResourcesService;
+import com.example.demo.service.UserService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
@@ -27,6 +29,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.AuthenticationEntryPoint;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.access.AccessDeniedHandler;
+import org.springframework.security.web.access.intercept.AuthorizationFilter;
 import org.springframework.security.web.authentication.WebAuthenticationDetails;
 import org.springframework.security.web.session.ConcurrentSessionFilter;
 import org.springframework.security.web.session.SessionInformationExpiredEvent;
@@ -38,6 +41,14 @@ import java.io.IOException;
 @Configuration
 public class SecurityConfig {
 
+//    @Bean
+//    public AuthorizationFilter authorizationFilter(){
+//        AuthorizationManager<HttpServletRequest> authorizationManager =
+//
+//        AuthorizationFilter filter = new AuthorizationFilter(authorizationManager);
+//
+//    }
+
     @Bean
     public SessionRegistry sessionRegistry(){
         return new SessionRegistryImpl();
@@ -46,6 +57,8 @@ public class SecurityConfig {
     public ConcurrentSessionFilter concurrentSessionFilter(){
         return new ConcurrentSessionFilter(sessionRegistry());
     }
+
+
 
 
     @Bean
@@ -58,6 +71,10 @@ public class SecurityConfig {
         return new AjaxAuthenticationProvider(userDetailsService,passwordEncoder());
     }
 
+    @Bean
+    public TerminalAuthorizationFilter terminalAuthorizationFilter(UserService userService, ResourcesService resourcesService){
+        return new TerminalAuthorizationFilter(userService,resourcesService);
+    }
 
 
 
@@ -67,33 +84,31 @@ public class SecurityConfig {
     public PasswordEncoder passwordEncoder(){
         return PasswordEncoderFactories.createDelegatingPasswordEncoder();
     }
+
+
     @Bean
     // 설정의 커스터 마이징을 도와 줌
     public WebSecurityCustomizer webSecurityCustomizer(){
         return
                 // 아예 해당경로를 모든 보안필터를 거치지 않도록 함
-                (web)->web.ignoring().requestMatchers("/css/**","js/**","images/**");
+                (web)->web.ignoring().requestMatchers("/css/**","js/**","images/**","html/**");
     }
     @Order(1)
     @Bean
-    public SecurityFilterChain securityFilterChain(HttpSecurity http, UserRepository userRepository,UserDetailsService userDetailsService,
+    public SecurityFilterChain securityFilterChain(HttpSecurity http, UserService userService,ResourcesService resourcesService, UserDetailsService userDetailsService,
                                                    AuthenticationDetailsSource<HttpServletRequest, WebAuthenticationDetails> detailsSource) throws Exception {
         http
                 .securityMatcher(new AntPathRequestMatcher("/**"))
                 .authenticationProvider(customAuthenticationProvider(userDetailsService))
                 .userDetailsService(userDetailsService)
+                .addFilterAfter(terminalAuthorizationFilter(userService,resourcesService),AuthorizationFilter.class)
                 .authorizeHttpRequests(auth->{
                     auth
                             .requestMatchers("/").permitAll()
-                            .requestMatchers("/users").permitAll()
-                            .requestMatchers("/mypage").hasRole("USER")
-                            .requestMatchers("/error").permitAll()
-                            .requestMatchers("/messages").hasRole("MANAGER")
                             .requestMatchers("/login").permitAll()
-                            .requestMatchers("/logout").permitAll()
-                            .requestMatchers("/config").hasRole("ADMIN")
-                            .requestMatchers("/test").permitAll()
+                            .requestMatchers("/users").permitAll()
                             .anyRequest().authenticated();
+
                 })
                 .formLogin(login->{
                     login.loginPage("/login");
@@ -104,6 +119,7 @@ public class SecurityConfig {
                     login.successHandler(new CustomAuthenticationSuccessHandler());
                     login.authenticationDetailsSource(detailsSource);
                 })
+
                 .sessionManagement(s->{
                     s.sessionFixation().migrateSession();
                     s.maximumSessions(1).maxSessionsPreventsLogin(false).expiredUrl("/login");

@@ -35,6 +35,7 @@ public class RoleServiceImpl implements RoleService {
         if (findRole == null){roleRepository.save(role);}
         else{
             findRole.setRoleDesc(role.getRoleDesc());
+            findRole.setParentRole(role.getParentRole());
         }
 
 

@@ -93,7 +93,7 @@ public class SetupDataLoader implements ApplicationListener<ContextRefreshedEven
     @Transactional
     public Account createUserIfNotFound(String userName, String password, String email, int age, Set<Role> roleSet) {
 
-        Account account = userRepository.findByUsername(userName);
+        Account account = userRepository.findByUsername(userName).orElse(null);
 
         if (account == null) {
             account = Account.builder()

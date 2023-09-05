@@ -29,13 +29,39 @@
     </div>
   </div>
   <div class="form-group">
+    <label for="roles" class="col-sm-2 control-label">부모 권한</label>
+    <div class="col-sm-10" th:each="r: ${roles}">
+      <input th:type="checkbox" name="parentRoleName" class="parent-role-checkbox" id="roles"
+             th:text="${r.roleName}"
+             th:value="${r.roleName}"
+             th:checked="${r.getRoleName().equals(role.parentRoleName)} ? 'true' : 'false'" />
+    </div>
+  </div>
+  <div class="form-group">
     <div class="col-sm-offset-1 col-sm-10">
       <button type="Submit" class="btn btn-dark btn-lg">등록</button>
       <a class="btn btn-dark btn-lg" style="margin:10;" href="/admin/roles">목록 </a>
     </div>
   </div>
+
 </form>
 </div>
 </div>
+<script type="text/javascript">
+  $(document).ready(function () {
+    // 부모 권한 체크박스들을 선택할 때 이벤트 처리
+    $('.parent-role-checkbox').on('change', function () {
+      // 체크된 부모 권한 체크박스들을 가져옴
+      var checkedParentRoles = $('.parent-role-checkbox:checked');
+
+      // 하나 이상의 부모 권한이 선택된 경우
+      if (checkedParentRoles.length > 1) {
+        alert("부모 권한은 하나만 선택 가능합니다.");
+        // 모든 부모 권한 체크박스의 선택을 해제
+        $('.parent-role-checkbox').prop('checked', false);
+      }
+    });
+  });
+</script>
 </body>
 </html>

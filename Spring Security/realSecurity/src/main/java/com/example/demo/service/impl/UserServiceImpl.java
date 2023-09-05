@@ -16,6 +16,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.HashSet;
 import java.util.List;
+import java.util.NoSuchElementException;
 import java.util.Set;
 import java.util.stream.Collectors;
 
@@ -58,7 +59,8 @@ public class UserServiceImpl implements UserService {
             });
             account.setUserRoles(roles);
         }
-        Account findAccount = userRepository.findByUsername(accountDto.getUsername());
+        Account findAccount = userRepository.findByUsername(accountDto.getUsername()).orElseThrow( ()->new NoSuchElementException("No user")
+        );
         if (findAccount == null){
             userRepository.save(account);
         }
@@ -86,6 +88,12 @@ public class UserServiceImpl implements UserService {
 
         accountDto.setRoles(roles);
         return accountDto;
+    }
+
+    @Override
+    public Account getUserByName(String name) {
+        return userRepository.findByUsername(name).orElseThrow(()->new NoSuchElementException("No user"));
+
     }
 
     @Transactional

@@ -3,6 +3,7 @@ package com.example.demo.domain.entity;
 import com.example.demo.domain.dto.AccountDto;
 import jakarta.persistence.*;
 import lombok.*;
+import org.springframework.core.annotation.Order;
 
 import java.util.HashSet;
 import java.util.List;
@@ -28,7 +29,7 @@ public class Account {
 
 
 
-    @ManyToMany(fetch = FetchType.LAZY, cascade={CascadeType.ALL})
+    @ManyToMany(fetch = FetchType.EAGER, cascade={CascadeType.ALL})
     @JoinTable(name = "account_roles", joinColumns = { @JoinColumn(name = "account_id") }, inverseJoinColumns = {
             @JoinColumn(name = "role_id") })
     private Set<Role> userRoles = new HashSet<>();

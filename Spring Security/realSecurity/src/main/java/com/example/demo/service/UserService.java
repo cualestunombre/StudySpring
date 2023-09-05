@@ -17,5 +17,7 @@ public interface UserService {
 
     AccountDto getUser(Long id);
 
+    Account getUserByName(String name);
+
     void deleteUser(Long idx);
 }
