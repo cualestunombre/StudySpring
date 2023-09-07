@@ -12,4 +12,6 @@ DB1 : JDBC핵심개념 및 트랜잭션 기초 개념(수강완료)
 <br>
 DB2 : 다양한 DB접근 기술(JDBC template, JPA, Data JPA, QueryDsl) (수강완료)
 <br>
-스프링 고급편 : 디자인 패턴 및 AOP (수강예정)
+스프링 고급편 : 디자인 패턴 및 AOP (수강완료)
+<br>
+스프링 부트편 : AutoConfiguration, WAS 개념, 프로그램 환경변수 등등 개봘환경 관리(수강중)
