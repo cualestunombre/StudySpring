@@ -1,5 +1,6 @@
 package com.example.demo.security;
 
+import com.example.demo.security.filter.AuthoritiesRefreshFilter;
 import com.example.demo.security.filter.TerminalAuthorizationFilter;
 import com.example.demo.domain.dto.SimpleJsonResponse;
 import com.example.demo.security.handler.CustomAuthenticationFailureHandler;
@@ -30,6 +31,7 @@ import org.springframework.security.web.AuthenticationEntryPoint;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.access.AccessDeniedHandler;
 import org.springframework.security.web.access.intercept.AuthorizationFilter;
+import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import org.springframework.security.web.authentication.WebAuthenticationDetails;
 import org.springframework.security.web.session.ConcurrentSessionFilter;
 import org.springframework.security.web.session.SessionInformationExpiredEvent;
@@ -95,12 +97,13 @@ public class SecurityConfig {
     }
     @Order(1)
     @Bean
-    public SecurityFilterChain securityFilterChain(HttpSecurity http, UserService userService,ResourcesService resourcesService, UserDetailsService userDetailsService,
-                                                   AuthenticationDetailsSource<HttpServletRequest, WebAuthenticationDetails> detailsSource) throws Exception {
+    public SecurityFilterChain securityFilterChain(HttpSecurity http, UserService userService, ResourcesService resourcesService, UserDetailsService userDetailsService,
+                                                   AuthenticationDetailsSource<HttpServletRequest, WebAuthenticationDetails> detailsSource, AuthoritiesRefreshFilter authoritiesRefreshFilter) throws Exception {
         http
                 .securityMatcher(new AntPathRequestMatcher("/**"))
                 .authenticationProvider(customAuthenticationProvider(userDetailsService))
                 .userDetailsService(userDetailsService)
+                .addFilterAfter(authoritiesRefreshFilter, UsernamePasswordAuthenticationFilter.class)
                 .addFilterAfter(terminalAuthorizationFilter(userService,resourcesService),AuthorizationFilter.class)
                 .authorizeHttpRequests(auth->{
                     auth

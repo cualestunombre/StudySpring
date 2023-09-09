@@ -11,6 +11,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.AnonymousAuthenticationToken;
 import org.springframework.security.core.Authentication;
+import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 import org.springframework.security.web.util.matcher.RequestMatcher;
@@ -36,7 +37,9 @@ public class TerminalAuthorizationFilter extends OncePerRequestFilter {
             return;
         }
 
-        Set<Role> roles = userService.getUserByName(authentication.getName()).getUserRoles();
+        List<String> roles = authentication.getAuthorities().stream()
+                .map(GrantedAuthority::getAuthority)
+                .collect(Collectors.toList());
         List<Resources> resources = getResourcesSortedByOrder();
 
         if (!isAuthorized(request, roles, resources)) {
@@ -54,11 +57,11 @@ public class TerminalAuthorizationFilter extends OncePerRequestFilter {
     private List<Resources> getResourcesSortedByOrder() {
         return resourcesService.getResources()
                 .stream()
-                .sorted(Comparator.comparingInt(Resources::getOrderNum).reversed())
+                .sorted(Comparator.comparingInt(Resources::getOrderNum))
                 .collect(Collectors.toList());
     }
 
-    private boolean isAuthorized(HttpServletRequest request, Set<Role> roles, List<Resources> resources) {
+    private boolean isAuthorized(HttpServletRequest request, List<String> roles, List<Resources> resources) {
         for (Resources resource : resources) {
             RequestMatcher requestMatcher = new AntPathRequestMatcher(resource.getResourceName());
             if (requestMatcher.matches(request)) {
@@ -66,8 +69,8 @@ public class TerminalAuthorizationFilter extends OncePerRequestFilter {
                 // roles 는 내가 가진 권한
                 Set<Role> resourceRoles = resource.getRoleSet();
                 for (Role resourceRole : resourceRoles) {
-                    for(Role myRole : roles){
-                        if(match(resourceRole,myRole))return true;
+                    for(String role : roles){
+                        if(match(resourceRole,role))return true;
                     }
                 }
                 return false; // 권한 없음
@@ -75,14 +78,8 @@ public class TerminalAuthorizationFilter extends OncePerRequestFilter {
         }
         return true; // 매칭되는 리소스가 없음
     }
-    private boolean match(Role resourceRole,Role userRole){
-        List<String> userRoles  = new ArrayList<>();
-        Role currentRole = userRole;
-        while (currentRole != null){
-            userRoles.add(currentRole.getRoleName());
-            currentRole = currentRole.getParentRole();
-        }
-        return userRoles.contains(resourceRole.getRoleName());
+    private boolean match(Role resourceRole,String userRole){
+        return resourceRole.getRoleName().equals(userRole);
     }
 
     private void sendAccessDeniedResponse(HttpServletResponse response) throws IOException {
